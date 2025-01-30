@@ -21,5 +21,8 @@ class Profile extends Model
         'description',
         'visi',
         'misi',
+        'email',      
+        'phone',      
+        'address',    
     ];
 }
