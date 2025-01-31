@@ -37,12 +37,12 @@
 
                     <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
                         <ul class="site-menu main-menu js-clone-nav mr-auto ">
-                            <li class="active"><a href="index.html" class="nav-link">Home</a></li>
-                            <li><a href="about.html" class="nav-link">About</a></li>
-                            <li><a href="packages.html" class="nav-link">Packages</a></li>
-                            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-                            <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-                            <li><a href="contact.html" class="nav-link">Contact</a></li>
+                            <li class="active"><a href="{{ url('/') }}" class="nav-link">Home</a></li>
+                            <li><a href="{{ url('/news') }}" class="nav-link">News</a></li>
+                            <li><a href="{{ url('/packages') }}" class="nav-link">Packages</a></li>
+                            <li><a href="{{ url('/gallery') }}" class="nav-link">Gallery</a></li>
+                            <li><a href="{{ url('/pricing') }}" class="nav-link">Pricing</a></li>
+                            <li><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
                         </ul>
                     </nav>
 
