@@ -70,7 +70,7 @@
                             <p class="mt-5"><a href="#" class="btn btn-primary py-4 btn-custom-1">Learn More</a></p>
                         </div>
                         <div class="col-md-6 ml-auto align-self-end">
-                            <img src="images/kid_transparent.png" alt="Image" class="img-fluid">
+                            <img src="{{ asset('assets/images/kid_transparent.png') }}" alt="Image" class="img-fluid">
 
                         </div>
                     </div>
@@ -116,7 +116,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 mb-5 mb-md-0">
-                        <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+                        <img src="{{ asset('assets/images/img_1.jpg') }}" alt="Image" class="img-fluid">
                     </div>
                     <div class="col-md-5 ml-auto pl-md-5">
                         <span class="text-cursive h5 text-red">About Us</span>
@@ -141,7 +141,7 @@
                 <div class="row">
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <div class="package text-center bg-white">
-                            <span class="img-wrap"><img src="images/flaticon/svg/001-jigsaw.svg" alt="Image" class="img-fluid"></span>
+                            <span class="img-wrap"><img src="{{ asset('assets/images/flaticon/svg/001-jigsaw.svg') }}" alt="Image" class="img-fluid"></span>
                             <h3 class="text-teal">Indoor Games</h3>
                             <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
                             <p><a href="#" class="btn btn-primary btn-custom-1 mt-4">Learn More</a></p>
@@ -149,7 +149,7 @@
                     </div>
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <div class="package text-center bg-white">
-                            <span class="img-wrap"><img src="images/flaticon/svg/002-target.svg" alt="Image" class="img-fluid"></span>
+                            <span class="img-wrap"><img src="{{ asset('assets/images/flaticon/svg/002-target.svg') }}" alt="Image" class="img-fluid"></span>
                             <h3 class="text-success">Outdoor Game and Event</h3>
                             <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
                             <p><a href="#" class="btn btn-warning btn-custom-1 mt-4">Learn More</a></p>
@@ -157,7 +157,7 @@
                     </div>
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <div class="package text-center bg-white">
-                            <span class="img-wrap"><img src="images/flaticon/svg/003-mission.svg" alt="Image" class="img-fluid"></span>
+                            <span class="img-wrap"><img src="{{ asset('assets/images/flaticon/svg/003-mission.svg') }}" alt="Image" class="img-fluid"></span>
                             <h3 class="text-danger">Camping for Kids</h3>
                             <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
                             <p><a href="#" class="btn btn-success btn-custom-1 mt-4">Learn More</a></p>
@@ -223,7 +223,7 @@
                             <div class="owl-carousel nonloop-block-13">
                                 <div class="testimonial-3 d-flex">
                                     <div class="vcard-wrap mr-5">
-                                        <img src="images/person_1.jpg" alt="Image" class="vcard img-fluid">
+                                        <img src="{{ asset('assets/images/person_1.jpg') }}" alt="Image" class="vcard img-fluid">
                                     </div>
                                     <div class="text">
                                         <h3>Jeff Woodland</h3>
@@ -234,7 +234,7 @@
 
                                 <div class="testimonial-3 d-flex">
                                     <div class="vcard-wrap mr-5">
-                                        <img src="images/person_3.jpg" alt="Image" class="vcard img-fluid">
+                                        <img src="{{ asset('assets/images/person_3.jpg') }}" alt="Image" class="vcard img-fluid">
                                     </div>
                                     <div class="text">
                                         <h3>Jeff Woodland</h3>
@@ -245,7 +245,7 @@
 
                                 <div class="testimonial-3 d-flex">
                                     <div class="vcard-wrap mr-5">
-                                        <img src="images/person_2.jpg" alt="Image" class="vcard img-fluid">
+                                        <img src="{{ asset('assets/images/person_2.jpg') }}" alt="Image" class="vcard img-fluid">
                                     </div>
                                     <div class="text">
                                         <h3>Jeff Woodland</h3>
