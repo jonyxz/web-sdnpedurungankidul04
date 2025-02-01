@@ -15,8 +15,14 @@ class Student extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',        
-        'class',      
-        'photo',    
+        'name',
+        'class',
+        'photo',
+        'class_id',
     ];
+
+    public function classroom()
+    {
+        return $this->belongsTo(Classroom::class, 'class_id');
+    }
 }
