@@ -10,53 +10,7 @@
             <div class="site-mobile-menu-body"></div>
         </div>
 
-        <header class="site-navbar site-navbar-target" role="banner">
-
-            <div class="container mb-3">
-                <div class="d-flex align-items-center">
-                    <div class="site-logo mr-auto">
-                        <a href="index.html">Kiddy<span class="text-primary">.</span></a>
-                    </div>
-                    <div class="site-quick-contact d-none d-lg-flex ml-auto ">
-                        <div class="d-flex site-info align-items-center mr-5">
-                            <span class="block-icon mr-3"><span class="icon-map-marker text-yellow"></span></span>
-                            <span>34 Street Name, City Name Here, <br> United States</span>
-                        </div>
-                        <div class="d-flex site-info align-items-center">
-                            <span class="block-icon mr-3"><span class="icon-clock-o"></span></span>
-                            <span>Sunday - Friday 8:00AM - 4:00PM <br> Saturday CLOSED</span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="menu-wrap d-flex align-items-center">
-                    <span class="d-inline-block d-lg-none"><a href="#" class="text-black site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-black"></span></a></span>
-
-                    <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
-                        <ul class="site-menu main-menu js-clone-nav mr-auto ">
-                            <li class="active"><a href="{{ url('/') }}" class="nav-link">Home</a></li>
-                            <li><a href="{{ url('/news') }}" class="nav-link">News</a></li>
-                            <li><a href="{{ url('/packages') }}" class="nav-link">Packages</a></li>
-                            <li><a href="{{ url('/gallery') }}" class="nav-link">Gallery</a></li>
-                            <li><a href="{{ url('/pricing') }}" class="nav-link">Pricing</a></li>
-                            <li><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
-                        </ul>
-                    </nav>
-
-                    <div class="top-social ml-auto">
-                        <a href="#"><span class="icon-facebook text-teal"></span></a>
-                        <a href="#"><span class="icon-twitter text-success"></span></a>
-                        <a href="#"><span class="icon-linkedin text-yellow"></span></a>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </header>
+        
 
         <div class="ftco-blocks-cover-1">
 
@@ -71,41 +25,6 @@
                         </div>
                         <div class="col-md-6 ml-auto align-self-end">
                             <img src="{{ asset('assets/images/kid_transparent.png') }}" alt="Image" class="img-fluid">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="site-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="block-2 red">
-                            <span class="wrap-icon">
-                                <span class="icon-home"></span>
-                            </span>
-                            <h2>Indoor Games</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nesciunt, mollitia, hic enim id culpa.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="block-2 yellow">
-                            <span class="wrap-icon">
-                                <span class="icon-person"></span>
-                            </span>
-                            <h2>Outdoor Game And Event</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nesciunt, mollitia, hic enim id culpa.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="block-2 teal">
-                            <span class="wrap-icon">
-                                <span class="icon-cog"></span>
-                            </span>
-                            <h2>Camping for Kids</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nesciunt, mollitia, hic enim id culpa.</p>
                         </div>
                     </div>
                 </div>

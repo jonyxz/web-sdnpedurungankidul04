@@ -5,11 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet">
-    
-    <!-- Include Tailwind CSS -->
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet">    
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="{{asset("assets/fonts/icomoon/style.css")}}">
 
     <link rel="stylesheet" href="{{asset("assets/css/bootstrap.min.css")}}">
@@ -23,11 +20,11 @@
 
 </head>
 <body class="flex flex-col min-h-screen font-roboto">
+    @include('components.header')
     <main class="flex-grow">
         {{ $slot }}
     </main>
     @include('components.footer')
-    <!-- Tambahkan skrip Anda di sini -->
 
     <script src="{{ asset('assets/js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ asset('assets/js/jquery-migrate-3.0.0.js') }}"></script>
@@ -42,7 +39,6 @@
     <script src="{{ asset('assets/js/jquery.easing.1.3.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap-datepicker.min.js') }}"></script>
     <script src="{{ asset('assets/js/aos.js') }}"></script>
-
     <script src="{{ asset('assets/js/main.js') }}"></script>
 </body>
 </html>
