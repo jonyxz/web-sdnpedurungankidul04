@@ -8,15 +8,15 @@
             <div class="site-quick-contact d-none d-lg-flex ml-auto ">
                 <div class="d-flex site-info align-items-center mr-4">
                     <span class="block-icon mr-3"><span class="icon-envelope text-blue-700"></span></span>
-                    <span>Email Kami<br><a href="mailto:sdn.pedurungankidul.04@gmail.com" class="text-black">sdn.pedurungankidul.04@gmail.com</a></span>
+                    <span>Email Kami<br><a href="mailto:sdn.pedurungankidul.04@gmail.com" class="text-white">sdn.pedurungankidul.04@gmail.com</a></span>
                 </div>
                 <div class="d-flex site-info align-items-center mr-4">
                     <span class="block-icon mr-3"><span class="icon-phone text-yellow-500"></span></span>
-                    <span>Hubungi Kami<br><a class="text-black">081390565430</a></span>
+                    <span>Hubungi Kami<br><a class="text-white">081390565430</a></span>
                 </div>
                 <div class="d-flex site-info align-items-center">
                     <span class="block-icon mr-3"><span class="icon-comments text-green-500"></span></span>
-                    <span>Pengaduan<br><a href="#" class="text-black">Mengeluh</a></span>
+                    <span>Pengaduan<br><a href="#" class="text-white">Mengeluh</a></span>
                 </div>
             </div>
         </div>
