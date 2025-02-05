@@ -21,6 +21,8 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class BannerResource extends Resource
 {
     protected static ?string $model = Banner::class;
+    protected static ?string $navigationIcon = 'heroicon-o-photo';
+    protected static ?string $navigationGroup = 'Galeri & Berita';
 
     public static function form(Form $form): Forms\Form
     {
