@@ -29,27 +29,25 @@
                 <ul class="site-menu main-menu js-clone-nav mr-auto ">
                     <li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ url('/') }}" class="nav-link">Beranda</a></li>
                     <li class="has-children {{ request()->is('submenu1', 'submenu2', 'submenu3') ? 'active' : '' }}">
-                        <a href="#" class="nav-link">Profil</a>
+                        <a href="#" class="nav-link">Profile</a>
                         <ul class="dropdown">
-                            <li><a href="{{ url('/submenu1') }}" class="nav-link">Submenu 1</a></li>
-                            <li><a href="{{ url('/submenu2') }}" class="nav-link">Submenu 2</a></li>
-                            <li><a href="{{ url('/submenu3') }}" class="nav-link">Submenu 3</a></li>
+                            <li><a href="{{ url('/submenu1') }}" class="nav-link">Profile Sekolah</a></li>
+                            <li><a href="{{ url('/submenu2') }}" class="nav-link">Profile Guru</a></li>
+                            <li><a href="{{ url('/submenu3') }}" class="nav-link">Profile Siswa</a></li>
                         </ul>
                     </li>
                     <li class="has-children {{ request()->is('submenu1', 'submenu2', 'submenu3') ? 'active' : '' }}">
                         <a href="#" class="nav-link">Galeri</a>
                         <ul class="dropdown">
-                            <li><a href="{{ url('/submenu1') }}" class="nav-link">Submenu 1</a></li>
-                            <li><a href="{{ url('/submenu2') }}" class="nav-link">Submenu 2</a></li>
-                            <li><a href="{{ url('/submenu3') }}" class="nav-link">Submenu 3</a></li>
+                            <li><a href="{{ url('/submenu1') }}" class="nav-link">Foto</a></li>
+                            <li><a href="{{ url('/submenu2') }}" class="nav-link">Video</a></li>
                         </ul>
                     </li>
                     <li class="has-children {{ request()->is('submenu1', 'submenu2', 'submenu3') ? 'active' : '' }}">
                         <a href="#" class="nav-link">Akademik</a>
                         <ul class="dropdown">
-                            <li><a href="{{ url('/submenu1') }}" class="nav-link">Submenu 1</a></li>
-                            <li><a href="{{ url('/submenu2') }}" class="nav-link">Submenu 2</a></li>
-                            <li><a href="{{ url('/submenu3') }}" class="nav-link">Submenu 3</a></li>
+                            <li><a href="{{ url('/submenu1') }}" class="nav-link">Buku Siswa</a></li>
+                            <li><a href="{{ url('/submenu3') }}" class="nav-link">Video Pembelajaran</a></li>
                         </ul>
                     </li>
                     <li class="{{ request()->is('news') ? 'active' : '' }}"><a href="{{ url('/news') }}" class="nav-link">Berita</a></li>
