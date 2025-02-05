@@ -1,4 +1,4 @@
- AOS.init({
+AOS.init({
  	duration: 800,
  	easing: 'slide',
  	once: false
@@ -265,9 +265,11 @@ jQuery(document).ready(function($) {
         'scrollTop': $(hash).offset().top - 50
       }, 600, 'easeInOutExpo', function() {
         // window.location.hash = hash;
-
       });
 
+      // Update active class
+      $('.main-menu li').removeClass('active');
+      $(this).closest('li').addClass('active');
     });
   };
   OnePageNavigation();

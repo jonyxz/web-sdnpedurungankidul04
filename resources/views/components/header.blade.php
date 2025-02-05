@@ -27,8 +27,8 @@
             <span class="d-inline-block d-lg-none"><a href="#" class="text-black site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-black"></span></a></span>
             <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto ">
-                    <li class="active"><a href="{{ url('/') }}" class="nav-link">Beranda</a></li>
-                    <li class="has-children">
+                    <li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ url('/') }}" class="nav-link">Beranda</a></li>
+                    <li class="has-children {{ request()->is('submenu1', 'submenu2', 'submenu3') ? 'active' : '' }}">
                         <a href="#" class="nav-link">Profil</a>
                         <ul class="dropdown">
                             <li><a href="{{ url('/submenu1') }}" class="nav-link">Submenu 1</a></li>
@@ -36,7 +36,7 @@
                             <li><a href="{{ url('/submenu3') }}" class="nav-link">Submenu 3</a></li>
                         </ul>
                     </li>
-                    <li class="has-children">
+                    <li class="has-children {{ request()->is('submenu1', 'submenu2', 'submenu3') ? 'active' : '' }}">
                         <a href="#" class="nav-link">Galeri</a>
                         <ul class="dropdown">
                             <li><a href="{{ url('/submenu1') }}" class="nav-link">Submenu 1</a></li>
@@ -44,7 +44,7 @@
                             <li><a href="{{ url('/submenu3') }}" class="nav-link">Submenu 3</a></li>
                         </ul>
                     </li>
-                    <li class="has-children">
+                    <li class="has-children {{ request()->is('submenu1', 'submenu2', 'submenu3') ? 'active' : '' }}">
                         <a href="#" class="nav-link">Akademik</a>
                         <ul class="dropdown">
                             <li><a href="{{ url('/submenu1') }}" class="nav-link">Submenu 1</a></li>
@@ -52,9 +52,9 @@
                             <li><a href="{{ url('/submenu3') }}" class="nav-link">Submenu 3</a></li>
                         </ul>
                     </li>
-                    <li><a href="{{ url('/news') }}" class="nav-link">Berita</a></li>
-                    <li><a href="{{ url('/packages') }}" class="nav-link">Pengumuman</a></li>
-                    <li class="has-children">
+                    <li class="{{ request()->is('news') ? 'active' : '' }}"><a href="{{ url('/news') }}" class="nav-link">Berita</a></li>
+                    <li class="{{ request()->is('packages') ? 'active' : '' }}"><a href="{{ url('/packages') }}" class="nav-link">Pengumuman</a></li>
+                    <li class="has-children {{ request()->is('https://ppd.semarangkota.go.id/', 'https://disdiksmg.semarangkota.go.id/', 'https://sangjuara.semarangkota.go.id/') ? 'active' : '' }}">
                         <a href="#" class="nav-link">Website Terkait</a>
                         <ul class="dropdown">
                             <li><a href="{{ url('https://ppd.semarangkota.go.id/') }}" class="nav-link">Website PPDB 2024/2025</a></li>
@@ -62,7 +62,7 @@
                             <li><a href="{{ url('https://sangjuara.semarangkota.go.id/') }}" class="nav-link">Website Sang Juara</a></li>
                         </ul>
                     </li>
-                    <li><a href="{{ url('/contact') }}" class="nav-link">Kontak</a></li>
+                    <li class="{{ request()->is('kontak') ? 'active' : '' }}"><a href="{{ url('/kontak') }}" class="nav-link">Kontak</a></li>
                 </ul>
             </nav>
 
