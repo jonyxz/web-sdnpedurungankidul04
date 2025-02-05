@@ -11,7 +11,7 @@
 
         <!-- hero -->
         <div class="ftco-blocks-cover-1">
-            <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('{{ asset('assets/images/sdn/bg_asli.png') }}')">
+            <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('{{ asset("assets/images/sdn/bg_asli.png") }}')">
                 <div class="container">
                     <div class="row align-items-center ">
 
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-5 justify-center">
+                    <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
                         <div class="bg-white rounded-lg shadow-sm">
                             <a class="mb-2" href="#">
                                 <span class="img-fluid w-100 h-auto"><img src="{{ asset('assets/images/post_3.jpg') }}" alt="Image"></span>
@@ -53,7 +53,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-5 justify-center">
+                    <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
                         <div class="bg-white rounded-lg shadow-sm">
                             <a class="mb-2" href="#">
                                 <span class="img-fluid w-100 h-auto"><img src="{{ asset('assets/images/post_2.jpg') }}" alt="Image"></span>
@@ -69,7 +69,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-5 justify-center">
+                    <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
                         <div class="bg-white rounded-lg shadow-sm">
                             <a class="mb-2" href="#">
                                 <span class="img-fluid w-100 h-auto"><img src="{{ asset('assets/images/post_2.jpg') }}" alt="Image"></span>
@@ -85,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-5 justify-center">
+                    <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
                         <div class="bg-white rounded-lg shadow-sm">
                             <a class="mb-2" href="#">
                                 <span class="img-fluid w-100 h-auto"><img src="{{ asset('assets/images/post_2.jpg') }}" alt="Image"></span>

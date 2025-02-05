@@ -1,12 +1,11 @@
 <footer class="bg-dark text-white py-10 max-h-[400px] overflow-y-auto">
     <div class="container mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-                <h2 class="text-xl text-white font-semibold mb-4">Kontak Kami</h2>
+        <div class="grid grid-cols- md:grid-cols-4">
+            <div class="md:col-span-1">
+                <h2 class="text-xl text-white font-semibold mb-4">Navigation</h2>
                 <ul class="space-y-2">
-                    <li><a href="mailto:sdn.pedurungankidul.04@gmail.com" class="hover:text-gray-400">sdn.pedurungankidul.04@gmail.com</a></li>
-                    <li><a href="tel:081390565430" class="hover:text-gray-400">081390565430</a></li>
-                    <li>Jalan Blancir Raya RT 06 RW 12</li>
+                    <li><a href="https://www.kemdikbud.go.id/" class="hover:text-gray-400">Kemendikbud</a></li>
+                    <li><a href="http://disdik.semarangkota.go.id/" target="_blank" class="hover:text-gray-400">Dinas Pendidikan</a></li>
                 </ul>
             </div>
             <div>
@@ -18,10 +17,17 @@
                 </ul>
             </div>
             <div>
-                <h2 class="text-xl text-white font-semibold mb-4">Navigation</h2>
+                <h2 class="text-xl text-white font-semibold mb-4">Pengaduan</h2>
                 <ul class="space-y-2">
-                    <li><a href="https://www.kemdikbud.go.id/" class="hover:text-gray-400">Kemendikbud</a></li>
-                    <li><a href="http://disdik.semarangkota.go.id/" target="_blank" class="hover:text-gray-400">Dinas Pendidikan</a></li>
+                    <li><a href="/contact" class="hover:text-gray-400">Hubungi Kami</a></li>
+                </ul>
+            </div>
+            <div>
+            <h2 class="text-xl text-white font-semibold mb-4">Kontak Kami</h2>
+                <ul class="space-y-2">
+                    <li><a href="mailto:sdn.pedurungankidul.04@gmail.com" class="hover:text-gray-400">sdn.pedurungankidul.04@gmail.com</a></li>
+                    <li><a href="tel:081390565430" class="hover:text-gray-400">081390565430</a></li>
+                    <li>Jalan Blancir Raya RT 06 RW 12</li>
                 </ul>
             </div>
         </div>
