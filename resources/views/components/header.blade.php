@@ -58,9 +58,9 @@
                     <li class="has-children">
                         <a href="#" class="nav-link">Website Terkait</a>
                         <ul class="dropdown">
-                            <li><a href="{{ url('/submenu1') }}" class="nav-link">Submenu 1</a></li>
-                            <li><a href="{{ url('/submenu2') }}" class="nav-link">Submenu 2</a></li>
-                            <li><a href="{{ url('/submenu3') }}" class="nav-link">Submenu 3</a></li>
+                            <li><a href="{{ url('https://ppd.semarangkota.go.id/') }}" class="nav-link">Website PPDB 2024/2025</a></li>
+                            <li><a href="{{ url('https://disdiksmg.semarangkota.go.id/') }}" class="nav-link">Website Disdik</a></li>
+                            <li><a href="{{ url('https://sangjuara.semarangkota.go.id/') }}" class="nav-link">Website Sang Juara</a></li>
                         </ul>
                     </li>
                     <li><a href="{{ url('/pricing') }}" class="nav-link">Kontak</a></li>
