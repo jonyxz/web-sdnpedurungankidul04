@@ -16,7 +16,7 @@
                 </div>
                 <div class="d-flex site-info align-items-center">
                     <span class="block-icon mr-3"><span class="icon-comments text-green-500"></span></span>
-                    <span>Pengaduan<br><a href="#" class="text-white">Mengeluh</a></span>
+                    <span>Pengaduan<br><a href="{{ url('/contact') }}" class="text-white">Mengeluh</a></span>
                 </div>
             </div>
         </div>
@@ -53,7 +53,7 @@
                         </ul>
                     </li>
                     <li class="{{ request()->is('news') ? 'active' : '' }}"><a href="{{ url('/news') }}" class="nav-link">Berita</a></li>
-                    <li class="{{ request()->is('packages') ? 'active' : '' }}"><a href="{{ url('/packages') }}" class="nav-link">Pengumuman</a></li>
+                    <li class="{{ request()->is('announcement') ? 'active' : '' }}"><a href="{{ url('/announcement') }}" class="nav-link">Pengumuman</a></li>
                     <li class="has-children {{ request()->is('https://ppd.semarangkota.go.id/', 'https://disdiksmg.semarangkota.go.id/', 'https://sangjuara.semarangkota.go.id/') ? 'active' : '' }}">
                         <a href="#" class="nav-link">Website Terkait</a>
                         <ul class="dropdown">
