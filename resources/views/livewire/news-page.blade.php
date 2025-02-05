@@ -40,7 +40,7 @@
                     <div class="col-lg-4 mb-4 mb-lg-0 pb-5 justify-center">
                         <div class="bg-white rounded-lg shadow-sm">
                             <a class="mb-2" href="#">
-                                <span class="img-fluid w-100 h-auto"><img src="{{ asset('assets/images/post_2.jpg') }}" alt="Image"></span>
+                                <span class="img-fluid w-100 h-auto"><img src="{{ asset('assets/images/post_3.jpg') }}" alt="Image"></span>
                             </a>
                             <div class="px-4 py-4">
                                 <a href="#">

@@ -16,9 +16,9 @@
                     <div class="row align-items-center ">
 
                         <div class="col-md-5 mt-5 pt-5">
-                            <span class="text-cursive h5 text-light">Berita</span>
-                            <h1 class="mb-3 font-weight-bold text-teal">Berita Terkait</h1>
-                            <p><a href="{{ url('/') }}" class="text-white">Beranda</a> <span class="mx-3">/</span> <strong>Berita</strong></p>
+                            <span class="text-cursive h5 text-light">Pengumuman</span>
+                            <h1 class="mb-3 font-weight-bold text-teal">Pengumuman Sekolah</h1>
+                            <p><a href="{{ url('/') }}" class="text-white">Beranda</a> <span class="mx-3">/</span> <strong>Pengumuman</strong></p>
                         </div>
 
                     </div>
@@ -26,25 +26,82 @@
             </div>
         </div>
 
-        <!-- Berita -->
-        <div class="site-section bg-info">
+        <!-- Announcement -->
+        <div class="site-section bg-gray-300">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12 text-center">
-                        <span class="text-cursive h5 text-black d-block">Berita Sekolah</span>
-                        <h3 class="text-white text-center font-bold">SDN PEDURUNGAN KIDUL 04</h3>
+                        <span class="text-cursive h5 text-black d-block">Pengumuman Sekolah</span>
+                        <h3 class="text-black text-center font-bold">SDN PEDURUNGAN KIDUL 04</h3>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-2 gap-5">
-                    <div href="#" class="flex flex-col items-center bg-white rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100">
-                        <div class="h-full w-full"><img src="{{ asset('assets/images/post_2.jpg') }}" alt="Image" class="h-full w-full"></div>
-                        <div class="flex flex-col justify-between px-5 py-3 leading-normal">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="flex flex-col my-2 bg-white border-slate-200 rounded-lg">
+                            <div class="p-4">
+                                <h5 class="mb-2 text-slate-800 text-xl font-semibold">              
+                                    Website Review Check Update from Our Team in San Francisco
+                                </h5>
+                                <p class="text-slate-600 leading-normal font-light">
+                                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can enjoy the main night life in Barcelona.
+                                </p>
+
+                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Read more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="flex flex-col my-2 bg-white border-slate-200 rounded-lg">
+                            <div class="p-4">
+                                <h5 class="mb-2 text-slate-800 text-xl font-semibold">
+                                    Website Review Check Update from Our Team in San Francisco
+                                </h5>
+                                <p class="text-slate-600 leading-normal font-light">
+                                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can enjoy the main night life in Barcelona.
+                                </p>
+                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Read more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="flex flex-col my-2 bg-white border-slate-200 rounded-lg">
+                            <div class="p-4">
+                                <h5 class="mb-2 text-slate-800 text-xl font-semibold">
+                                    Website Review Check Update from Our Team in San Francisco
+                                </h5>
+                                <p class="text-slate-600 leading-normal font-light">
+                                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can enjoy the main night life in Barcelona.
+                                </p>
+
+                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Read more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="flex flex-col my-2 bg-white border-slate-200 rounded-lg">
+                            <div class="p-4">
+                                <h5 class="mb-2 text-slate-800 text-xl font-semibold">
+                                    Website Review Check Update from Our Team in San Francisco
+                                </h5>
+                                <p class="text-slate-600 leading-normal font-light">
+                                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can enjoy the main night life in Barcelona.
+                                </p>
+
+                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Read more
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
