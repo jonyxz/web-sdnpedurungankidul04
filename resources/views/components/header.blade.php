@@ -62,7 +62,7 @@
                             <li><a href="{{ url('https://sangjuara.semarangkota.go.id/') }}" class="nav-link">Website Sang Juara</a></li>
                         </ul>
                     </li>
-                    <li><a href="{{ url('/pricing') }}" class="nav-link">Kontak</a></li>
+                    <li><a href="{{ url('/contact') }}" class="nav-link">Kontak</a></li>
                 </ul>
             </nav>
 
