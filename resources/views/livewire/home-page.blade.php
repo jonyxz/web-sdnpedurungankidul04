@@ -2,7 +2,7 @@
     <div class="site-wrap" id="home-section">
 
         <!-- Slider -->
-        <div class="site-section-cover overlay bg-opacity-50" data-stellar-background-ratio="0.5" style="background-image: url('{{ asset('assets/images/sdn/bg.jpg') }}')">
+        <div class="site-section-cover overlay bg-opacity-50" data-stellar-background-ratio="0.5" style="background-image: url('{{ asset('assets/images/sdn/bg_asli.png') }}')">
             <div class="site-section-cover overlay">
                 <div class="container">
                     <div class="row items-center justify-center mt-20">
@@ -14,7 +14,7 @@
                                         <img src="{{ asset('assets/images/sdn/slider_1.jpg') }}" alt="Image" class="vcard img-fluid w-64 h-64">
                                     </div>
                                     <div class="mb-1 text-center">
-                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam earum libero rem maxime magnam. Similique esse ab earum, autem consectetur.</p>
+                                        <p class="">Poster Kota Semarang 1.</p>
                                     </div>
                                 </div>
 
@@ -23,7 +23,7 @@
                                         <img src="{{ asset('assets/images/sdn/slider_1.jpg') }}" alt="Image" class="vcard img-fluid w-64 h-64">
                                     </div>
                                     <div class="mb-1 text-center">
-                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam earum libero rem maxime magnam. Similique esse ab earum, autem consectetur.</p>
+                                        <p class="">Poster Kota Semarang 2.</p>
                                     </div>
                                 </div>
 
@@ -32,7 +32,7 @@
                                         <img src="{{ asset('assets/images/sdn/slider_1.jpg') }}" alt="Image" class="vcard img-fluid w-64 h-64">
                                     </div>
                                     <div class="mb-1 text-center">
-                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam earum libero rem maxime magnam. Similique esse ab earum, autem consectetur.</p>
+                                        <p class="">Poster Kota Semarang 3.</p>
                                     </div>
                                 </div>
                             </div>
@@ -76,7 +76,7 @@
                         <div class="flex justify-center p-3">
                             <img src="{{ asset('assets/images/sdn/sekolah.jpg') }}" alt="Image" class="max-w-full h-auto">
                         </div>
-                        <p class="mb-0 text-black">
+                        <p class="mb-0">
                             Secara administrasi Sekolah Dasar (SD) Negeri Pedurungan Kidul 04 berada di Jalan Blancir Raya RT 06 RW 12 Kecamatan Pedurungan Kota Semarang. SD Negeri Pedurungan Kidul 04 terdiri dari beberapa bangunan utama, dengan rincian 8 (delapan) ruangan kelas, 1 (satu) ruangan Guru, 1 (satu) ruang Kepala Sekolah, 1 (satu) ruangan Perpustakaan, Mushola, Ruang UKS, halaman yang luas dan 1 (satu) kantin yang berada di dalam sekolah.
                         </p>
                     </div>
@@ -90,38 +90,39 @@
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12 text-center">
-                        <span class="text-cursive h5 text-red d-block">Packages You Like</span>
-                        <h2 class="text-white">Our Packages</h2>
+                        <span class="text-cursive h5 text-white d-block">Berita Terkini</span>
+                        <h3 class="text-white text-center font-bold">SDN PEDURUNGAN KIDUL 04</h3>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <div class="package text-center bg-white">
-                            <span class="img-wrap"><img src="{{ asset('assets/images/flaticon/svg/001-jigsaw.svg') }}" alt="Image" class="img-fluid"></span>
-                            <h3 class="text-teal">Indoor Games</h3>
+                            <span class="img-fluid w-100 h-auto"><img src="{{ asset('assets/images/post_2.jpg') }}" alt="Image"></span>
+                            <h3 class="text-teal m-3">Indoor Games</h3>
                             <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
-                            <p><a href="#" class="btn btn-primary btn-custom-1 mt-4">Learn More</a></p>
                         </div>
                     </div>
+
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <div class="package text-center bg-white">
-                            <span class="img-wrap"><img src="{{ asset('assets/images/flaticon/svg/002-target.svg') }}" alt="Image" class="img-fluid"></span>
-                            <h3 class="text-success">Outdoor Game and Event</h3>
+                            <span class="img-fluid w-100 h-auto"><img src="{{ asset('assets/images/post_3.jpg') }}" alt="Image" class="img-fluid"></span>
+                            <h3 class="text-success m-3">Outdoor Game and Event</h3>
                             <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
-                            <p><a href="#" class="btn btn-warning btn-custom-1 mt-4">Learn More</a></p>
                         </div>
                     </div>
+
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <div class="package text-center bg-white">
-                            <span class="img-wrap"><img src="{{ asset('assets/images/flaticon/svg/003-mission.svg') }}" alt="Image" class="img-fluid"></span>
-                            <h3 class="text-danger">Camping for Kids</h3>
+                            <span class="img-fluid w-100 h-auto"><img src="{{ asset('assets/images/post_4.jpg') }}" alt="Image" class="img-fluid"></span>
+                            <h3 class="text-danger m-3">Camping for Kids</h3>
                             <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
-                            <p><a href="#" class="btn btn-success btn-custom-1 mt-4">Learn More</a></p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
-
     </div>
+
 </body>
