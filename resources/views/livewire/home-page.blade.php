@@ -1,5 +1,13 @@
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <div class="site-wrap" id="home-section">
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
 
         <!-- Slider -->
         <div class="site-section-cover overlay bg-opacity-50" data-stellar-background-ratio="0.5" style="background-image: url('{{ asset('assets/images/sdn/bg_asli.png') }}')">
@@ -47,7 +55,7 @@
         <div class="site-section bg-gray-200">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 mb-5 mb-md-0">
+                    <div class="col-md-6 mb-5 mb-md-0 transform transition duration-500 ease-in-out hover:scale-105">
                         <img src="{{ asset('assets/images/sdn/profile_sd.png') }}" alt="Image" class="img-fluid w-80 h-80">
                     </div>
                     <div class="col-md-6 ml-auto pl-md-0">
@@ -67,13 +75,13 @@
         </div>
 
         <!-- About -->
-        <div class="site-section bg-teal">
+        <div class="site-section bg-gray-300">
             <div class="container">
                 <div class="row justify-content-center text-center section-2-title">
                     <div class="col-md-10">
                         <span class="text-cursive h4 text-red">Sekilas Tentang</span>
-                        <h3 class="text-white text-center font-bold">SDN PEDURUNGAN KIDUL 04</h3>
-                        <div class="flex justify-center p-3">
+                        <h3 class="text-black text-center font-bold">SDN PEDURUNGAN KIDUL 04</h3>
+                        <div class="flex justify-center p-3 transform transition duration-500 ease-in-out hover:scale-105">
                             <img src="{{ asset('assets/images/sdn/sekolah.jpg') }}" alt="Image" class="max-w-full h-auto">
                         </div>
                         <p class="mb-0">
@@ -90,37 +98,43 @@
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12 text-center">
-                        <span class="text-cursive h5 text-white d-block">Berita Terkini</span>
+                        <span class="text-cursive h5 text-black d-block">Berita Terkini</span>
                         <h3 class="text-white text-center font-bold">SDN PEDURUNGAN KIDUL 04</h3>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-4 mb-4 mb-lg-0">
-                        <div class="package text-center bg-white">
-                            <span class="img-fluid w-100 h-auto"><img src="{{ asset('assets/images/post_2.jpg') }}" alt="Image"></span>
-                            <h3 class="text-teal m-3">Indoor Games</h3>
-                            <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
+                        <div class="package text-center bg-white transform transition duration-500 ease-in-out hover:scale-105">
+                            <a href="#" class="text-gray-700">
+                                <span class="img-fluid w-100 h-auto"><img src="{{ asset('assets/images/post_2.jpg') }}" alt="Image"></span>
+                                <h3 class="text-teal m-3">Indoor Games</h3>
+                                <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
+                            </a>
                         </div>
                     </div>
 
                     <div class="col-lg-4 mb-4 mb-lg-0">
-                        <div class="package text-center bg-white">
-                            <span class="img-fluid w-100 h-auto"><img src="{{ asset('assets/images/post_3.jpg') }}" alt="Image" class="img-fluid"></span>
-                            <h3 class="text-success m-3">Outdoor Game and Event</h3>
-                            <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
+                        <div class="package text-center bg-white transform transition duration-500 ease-in-out hover:scale-105">
+                            <a href="#" class="text-gray-700">
+                                <span class="img-fluid w-100 h-auto"><img src="{{ asset('assets/images/post_2.jpg') }}" alt="Image"></span>
+                                <h3 class="text-teal m-3">Indoor Games</h3>
+                                <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
+                            </a>
                         </div>
                     </div>
 
                     <div class="col-lg-4 mb-4 mb-lg-0">
-                        <div class="package text-center bg-white">
-                            <span class="img-fluid w-100 h-auto"><img src="{{ asset('assets/images/post_4.jpg') }}" alt="Image" class="img-fluid"></span>
-                            <h3 class="text-danger m-3">Camping for Kids</h3>
-                            <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
+                        <div class="package text-center bg-white transform transition duration-500 ease-in-out hover:scale-105">
+                            <a href="#" class="text-gray-700">
+                                <span class="img-fluid w-100 h-auto"><img src="{{ asset('assets/images/post_2.jpg') }}" alt="Image"></span>
+                                <h3 class="text-teal m-3">Indoor Games</h3>
+                                <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
+                            </a>
                         </div>
                     </div>
-
                 </div>
+
             </div>
         </div>
     </div>
