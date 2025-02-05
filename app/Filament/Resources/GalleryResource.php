@@ -22,7 +22,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class GalleryResource extends Resource
 {
     protected static ?string $model = Gallery::class;
-    protected static ?string $navigationIcon = 'heroicon-o-photograph';
+    protected static ?string $navigationIcon = 'heroicon-o-photo';
     protected static ?string $navigationGroup = 'Galeri';
 
     public static function form(Forms\Form $form): Forms\Form
@@ -41,10 +41,12 @@ class GalleryResource extends Resource
 
                     FileUpload::make('images')
                         ->label('Gambar')
-                        ->multiple() 
+                        ->multiple()
                         ->image()
                         ->directory('galleries') 
+                        ->disk('public')
                         ->reorderable()
+                        ->preserveFilenames()
                         ->columnSpanFull(),
                 ]),
             ]);
@@ -64,7 +66,10 @@ class GalleryResource extends Resource
 
                 ImageColumn::make('images')
                     ->label('Gambar')
-                    ->size(100), 
+                    ->size(100)  
+                    ->disk('public')
+                    ->getStateUsing(fn ($record) => $record->images ? asset('storage/' . $record->images[0]) : null)
+                    ->square(),
             ])
             ->filters([])
             ->actions([
