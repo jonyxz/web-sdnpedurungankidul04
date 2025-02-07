@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Kiddy &mdash; Website Template by Colorlib</title>
+    <title>SDN Pedurungan Kidul 04</title>
+    <link rel="icon" href="{{asset("assets/images/sdn/headlogo.png")}}" type="image/png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset("assets/fonts/icomoon/style.css")}}">
-
     <link rel="stylesheet" href="{{asset("assets/css/bootstrap.min.css")}}">
     <link rel="stylesheet" href="{{asset("assets/css/bootstrap-datepicker.css")}}">
     <link rel="stylesheet" href="{{asset("assets/css/jquery.fancybox.min.css")}}">
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="{{asset("assets/css/style.css")}}">
 
 </head>
+
 <body class="flex flex-col min-h-screen font-roboto">
     @include('components.header')
     <main class="flex-grow">
@@ -41,4 +43,5 @@
     <script src="{{ asset('assets/js/aos.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
 </body>
+
 </html>
