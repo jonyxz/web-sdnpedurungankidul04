@@ -44,60 +44,28 @@
                         <div class="flex flex-col my-2 bg-white border-gray-200 rounded-lg">
                             <div class="p-4">
                                 <h5 class="mb-2 text-black text-xl font-semibold">
-                                    Website Review Check Update from Our Team in San Francisco
+                                    Libur Semester Ganjil 2024/2025
                                 </h5>
                                 <p class="text-gray-600 leading-normal font-light">
-                                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can enjoy the main night life in Barcelona.
+                                    Liburan Semester Ganjil 2024/2025 dimulai dari tanggal 20 Desember 2024 hingga 5 Januari 2025.
                                 </p>
-                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                <a href="{{ url('/announcement/1') }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
                                     Read more
                                 </a>
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="col-lg-4 mb-4">
                         <div class="flex flex-col my-2 bg-white border-gray-200 rounded-lg">
                             <div class="p-4">
                                 <h5 class="mb-2 text-black text-xl font-semibold">
-                                    Website Review Check Update from Our Team in San Francisco
+                                    Pendaftaran Siswa Baru 2025/2026
                                 </h5>
                                 <p class="text-gray-600 leading-normal font-light">
-                                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can enjoy the main night life in Barcelona.
+                                    PPDB 2025/2026 akan segera dibuka pada tanggal 1 Februari 2025 hingga 30 April 2025.
                                 </p>
-                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-4">
-                        <div class="flex flex-col my-2 bg-white border-gray-200 rounded-lg">
-                            <div class="p-4">
-                                <h5 class="mb-2 text-black text-xl font-semibold">
-                                    Website Review Check Update from Our Team in San Francisco
-                                </h5>
-                                <p class="text-gray-600 leading-normal font-light">
-                                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can enjoy the main night life in Barcelona.
-                                </p>
-                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-4">
-                        <div class="flex flex-col my-2 bg-white border-gray-200 rounded-lg">
-                            <div class="p-4">
-                                <h5 class="mb-2 text-black text-xl font-semibold">
-                                    Website Review Check Update from Our Team in San Francisco
-                                </h5>
-                                <p class="text-gray-600 leading-normal font-light">
-                                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can enjoy the main night life in Barcelona.
-                                </p>
-                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                <a href="{{ url('/announcement/2') }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
                                     Read more
                                 </a>
                             </div>
