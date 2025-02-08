@@ -32,8 +32,8 @@
             <div class="container">
                 <div class="row justify-content-center text-center">
                     <div class="col-7 text-center mb-5">
-                        <h2>Hubungi Kami</h2>
-                        <p>Menggunakan Formulir Kontak.</p>
+                        <h2 class="text-center font-bold">Hubungi Kami</h2>
+                        <p class="text-cursive h5 text-black d-block">Menggunakan Formulir Kontak.</p>
                     </div>
                 </div>
                 <div class="row">
