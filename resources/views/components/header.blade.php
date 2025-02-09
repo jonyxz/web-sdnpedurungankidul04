@@ -43,11 +43,11 @@
                             <li><a href="{{ url('/submenu2') }}" class="nav-link">Video</a></li>
                         </ul>
                     </li>
-                    <li class="has-children {{ request()->is('submenu1', 'submenu2', 'submenu3') ? 'active' : '' }}">
+                    <li class="has-children {{ request()->is('https://buku.kemdikbud.go.id/panduan/siswa', 'https://www.youtube.com/channel/UC3jxLXIqktSuXVXxbr2I61Q') ? 'active' : '' }}">
                         <a href="#" class="nav-link">Akademik</a>
                         <ul class="dropdown">
-                            <li><a href="{{ url('/submenu1') }}" class="nav-link">Buku Siswa</a></li>
-                            <li><a href="{{ url('/submenu3') }}" class="nav-link">Video Pembelajaran</a></li>
+                            <li><a href="{{ url('https://buku.kemdikbud.go.id/panduan/siswa') }}" class="nav-link">Buku Siswa</a></li>
+                            <li><a href="{{ url('https://www.youtube.com/channel/UC3jxLXIqktSuXVXxbr2I61Q') }}" class="nav-link">Video Pembelajaran</a></li>
                         </ul>
                     </li>
                     <li class="{{ request()->is('news') ? 'active' : '' }}"><a href="{{ url('/news') }}" class="nav-link">Berita</a></li>

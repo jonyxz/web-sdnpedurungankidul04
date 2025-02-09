@@ -40,7 +40,7 @@
                     <!-- Siswa Items -->
                     <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
                         <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="#">
+                        <a class="mb-2" href="{{ url('/profile-siswa/2') }}">
                                 <span class="img-fluid d-flex justify-content-center"><img src="{{ asset('assets/images/sdn/kelas.png') }}" alt="Image" class=""></span>
                             </a>
                             <div class="px-4 py-4">
@@ -50,7 +50,7 @@
                     </div>
                     <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
                         <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="#">
+                        <a class="mb-2" href="{{ url('/profile-siswa/1') }}">
                                 <span class="img-fluid d-flex justify-content-center"><img src="{{ asset('assets/images/sdn/kelas.png') }}" alt="Image" class=""></span>
                             </a>
                             <div class="px-4 py-4">
@@ -60,7 +60,7 @@
                     </div>
                     <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
                         <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="#">
+                            <a class="mb-2" href="{{ url('/profile-siswa/2') }}">
                                 <span class="img-fluid d-flex justify-content-center"><img src="{{ asset('assets/images/sdn/kelas.png') }}" alt="Image" class=""></span>
                             </a>
                             <div class="px-4 py-4">
