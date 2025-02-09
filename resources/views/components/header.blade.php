@@ -68,6 +68,7 @@
                 <a href="https://web.facebook.com/SDNPedurunganKidul04" class="rounded-full border border-gray-300 p-2 flex items-center justify-center w-9 h-9 hover:bg-gray-200"><span class="icon-facebook text-blue-700 flex items-center justify-center"></span></a>
                 <a href="https://www.youtube.com/channel/UC-tpimeqCvFTRV8e31bpbXQ" class="rounded-full border border-gray-300 p-2 flex items-center justify-center w-9 h-9 hover:bg-gray-200"><span class="icon-youtube text-red flex items-center justify-center"></span></a>
                 <a href="https://instagram.com/sdnpedurungankidul04?igshid=ZDdkNTZiNTM=" class="rounded-full border border-gray-300 p-2 flex items-center justify-center w-9 h-9 hover:bg-gray-200"><span class="icon-instagram text-pink flex items-center justify-center"></span></a>
+                <a href="{{ url('/admin/login') }}" class="rounded-full border border-gray-300 p-2 flex items-center justify-center w-9 h-9 hover:bg-gray-200"><img src="{{ asset('assets/images/login.png') }}" alt="Login"></a>
             </div>
         </div>
     </div>
