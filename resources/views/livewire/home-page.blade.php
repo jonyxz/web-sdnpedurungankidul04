@@ -11,8 +11,6 @@
 
         <!-- Slider -->
         <div class="site-section-cover overlay bg-opacity-50" data-stellar-background-ratio="0.5" style="background-image: url('{{ asset("assets/images/sdn/bg_asli.png") }}')">
-
-
             <div class="site-section-cover overlay">
                 <div class="container">
                     <div class="row items-center justify-center mt-20">
