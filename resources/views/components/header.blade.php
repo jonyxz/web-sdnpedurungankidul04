@@ -31,16 +31,16 @@
                     <li class="has-children {{ request()->is('profile-sekolah', 'profile-guru', 'profile-siswa') ? 'active' : '' }}">
                         <a href="#" class="nav-link">Profile</a>
                         <ul class="dropdown">
-                            <li><a href="{{ url('/profile-sekolah') }}" class="nav-link">Profile Sekolah</a></li>
+                            <li><a wire:navigate href="{{ url('/profile-sekolah') }}" class="nav-link">Profile Sekolah</a></li>
                             <li><a href="{{ url('/profile-guru') }}" class="nav-link">Profile Guru</a></li>
                             <li><a href="{{ url('/profile-siswa') }}" class="nav-link">Profile Siswa</a></li>
                         </ul>
                     </li>
-                    <li class="has-children {{ request()->is('submenu1', 'submenu2', 'submenu3') ? 'active' : '' }}">
+                    <li class="has-children {{ request()->is('foto', 'video') ? 'active' : '' }}">
                         <a href="#" class="nav-link">Galeri</a>
                         <ul class="dropdown">
-                            <li><a href="{{ url('/submenu1') }}" class="nav-link">Foto</a></li>
-                            <li><a href="{{ url('/submenu2') }}" class="nav-link">Video</a></li>
+                            <li><a href="{{ url('/foto') }}" class="nav-link">Foto</a></li>
+                            <li><a href="{{ url('/video') }}" class="nav-link">Video</a></li>
                         </ul>
                     </li>
                     <li class="has-children {{ request()->is('https://buku.kemdikbud.go.id/panduan/siswa', 'https://www.youtube.com/channel/UC3jxLXIqktSuXVXxbr2I61Q') ? 'active' : '' }}">
