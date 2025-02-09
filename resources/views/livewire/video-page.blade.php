@@ -30,11 +30,11 @@
         </div>
 
         <!-- Berita -->
-        <div class="site-section bg-blue-500">
+        <div class="site-section bg-indigo-900">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12 text-center">
-                        <span class="text-cursive h5 text-black d-block">Berita Sekolah</span>
+                        <span class="text-cursive h5 text-white d-block">Berita Sekolah</span>
                         <h3 class="text-white text-center font-bold">SDN PEDURUNGAN KIDUL 04</h3>
                     </div>
                 </div>
