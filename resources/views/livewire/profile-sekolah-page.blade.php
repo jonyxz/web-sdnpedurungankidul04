@@ -18,7 +18,7 @@
                         <div class="col-md-5 mt-5 pt-5">
                             <span class="text-cursive h5 text-light">Proflie</span>
                             <h1 class="mb-3 font-weight-bold text-teal">Profile Sekolah</h1>
-                            <p><a href="{{ url('/') }}" class="text-white">Beranda</a> <span class="mx-3">/</span> <strong>Profile</strong></p>
+                            <p><a href="{{ url('/') }}" class="text-white">Beranda</a> <span class="mx-3">/</span> <strong>Profile Sekolah</strong></p>
                         </div>
 
                     </div>
@@ -26,7 +26,7 @@
             </div>
         </div>
 
-        <!-- Berita -->
+        <!-- Sekolah -->
         <div class="site-section bg-indigo-900">
             <div class="container">
                 <div class="row mb-5">

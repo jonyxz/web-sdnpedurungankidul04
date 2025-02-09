@@ -28,12 +28,12 @@
             <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto ">
                     <li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ url('/') }}" class="nav-link">Beranda</a></li>
-                    <li class="has-children {{ request()->is('profile-sekolah', 'submenu2', 'submenu3') ? 'active' : '' }}">
+                    <li class="has-children {{ request()->is('profile-sekolah', 'profile-guru', 'profile-siswa') ? 'active' : '' }}">
                         <a href="#" class="nav-link">Profile</a>
                         <ul class="dropdown">
                             <li><a href="{{ url('/profile-sekolah') }}" class="nav-link">Profile Sekolah</a></li>
-                            <li><a href="{{ url('/submenu2') }}" class="nav-link">Profile Guru</a></li>
-                            <li><a href="{{ url('/submenu3') }}" class="nav-link">Profile Siswa</a></li>
+                            <li><a href="{{ url('/profile-guru') }}" class="nav-link">Profile Guru</a></li>
+                            <li><a href="{{ url('/profile-siswa') }}" class="nav-link">Profile Siswa</a></li>
                         </ul>
                     </li>
                     <li class="has-children {{ request()->is('submenu1', 'submenu2', 'submenu3') ? 'active' : '' }}">
