@@ -92,85 +92,8 @@
             </div>
         </div>
 
-
         <!-- Berita -->
-        <div class="site-section bg-info">
-            <div class="container">
-                <div class="row mb-5">
-                    <div class="col-12 text-center">
-                        <span class="text-cursive h5 text-black d-block">Berita Terkini</span>
-                        <h3 class="text-white text-center font-bold">SDN PEDURUNGAN KIDUL 04</h3>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-5 justify-center">
-                        <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="#">
-                                <span class="img-wrap"><img src="{{ asset('assets/images/post_4.jpg') }}" alt="Image"></span>
-                            </a>
-                            <div class="px-4 py-4">
-                                <a href="#">
-                                    <h5 class="mb-2 font-bold tracking-tight text-gray-900">Noteworthy technology acquisitions 2021</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-5 justify-center">
-                        <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="#">
-                                <span class="img-wrap"><img src="{{ asset('assets/images/post_2.jpg') }}" alt="Image"></span>
-                            </a>
-                            <div class="px-4 py-4">
-                                <a href="#">
-                                    <h5 class="mb-2 font-bold tracking-tight text-gray-900">Noteworthy technology acquisitions 2021</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-5 justify-center">
-                        <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="#">
-                                <span class="img-wrap"><img src="{{ asset('assets/images/post_2.jpg') }}" alt="Image"></span>
-                            </a>
-                            <div class="px-4 py-4">
-                                <a href="#">
-                                    <h5 class="mb-2 font-bold tracking-tight text-gray-900">Noteworthy technology acquisitions 2021</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-5 justify-center">
-                        <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="#">
-                                <span class="img-wrap"><img src="{{ asset('assets/images/post_2.jpg') }}" alt="Image"></span>
-                            </a>
-                            <div class="px-4 py-4">
-                                <a href="#">
-                                    <h5 class="mb-2 font-bold tracking-tight text-gray-900">Noteworthy technology acquisitions 2021</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @include('livewire.news-page', ['hideHero' => true])
         
     </div>
 
