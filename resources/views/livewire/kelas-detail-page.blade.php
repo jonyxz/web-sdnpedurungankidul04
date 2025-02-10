@@ -16,8 +16,8 @@
                 @if($kelasId == 1)
                 <div class="container mx-auto pt-20">
                     <div class="pt-20 pb-10">
-                        <h2 class="text-white font-bold">SDN PEDURUNGAN KIDUL 04</h2>
-                        <span class="text-black text-cursive h5 d-block">Kontak Kami</span>
+                        <h2 class="text-black font-bold">SDN PEDURUNGAN KIDUL 04</h2>
+                        <span class="text-black text-cursive h4 d-block">Kelas 1</span>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                         <div class="text-center bg-white rounded-lg shadow-sm">
@@ -61,8 +61,8 @@
                     @elseif($kelasId == 2)
                     <div class="container mx-auto pt-20">
                     <div class="pt-20 pb-10">
-                        <h2 class="text-white font-bold">SDN PEDURUNGAN KIDUL 04</h2>
-                        <span class="text-black text-cursive h5 d-block">Kontak Kami</span>
+                        <h2 class="text-black font-bold">SDN PEDURUNGAN KIDUL 04</h2>
+                        <span class="text-black text-cursive h4 d-block">Kelas 2</span>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                         <div class="text-center bg-white rounded-lg shadow-sm">

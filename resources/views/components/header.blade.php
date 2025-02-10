@@ -8,7 +8,7 @@
             <div class="site-quick-contact d-none d-lg-flex ml-auto ">
                 <div class="d-flex site-info align-items-center mr-4">
                     <span class="block-icon mr-3"><span class="icon-envelope text-blue-800"></span></span>
-                    <span>Email Kami<br><a href="mailto:sdn.pedurungankidul.04@gmail.com" class="text-yellow">sdn.pedurungankidul.04@gmail.com</a></span>
+                    <span>Email Kami<br><a href="mailto:sdn.pedurungankidul.04@gmail.com" class="text-black font-bold">sdn.pedurungankidul.04@gmail.com</a></span>
                 </div>
                 <div class="d-flex site-info align-items-center mr-4">
                     <span class="block-icon mr-3"><span class="icon-phone text-yellow-500"></span></span>
@@ -16,7 +16,7 @@
                 </div>
                 <div class="d-flex site-info align-items-center">
                     <span class="block-icon mr-3"><span class="icon-comments text-green-500"></span></span>
-                    <span>Pengaduan<br><a wire:navigate href="{{ url('/contact') }}" class="text-yellow">Mengeluh</a></span>
+                    <span>Pengaduan<br><a wire:navigate href="{{ url('/contact') }}" class="text-black font-bold">Klik Mengeluh</a></span>
                 </div>
             </div>
         </div>

@@ -16,7 +16,7 @@
                     <div class="row align-items-center ">
 
                         <div class="col-md-5 mt-5 pt-5">
-                            <span class="text-cursive h5 text-light">Proflie</span>
+                            <span class="text-cursive h5 text-light">Profile</span>
                             <h1 class="mb-3 font-weight-bold text-teal">Profile Sekolah</h1>
                             <p><a href="{{ url('/') }}" class="text-white">Beranda</a> <span class="mx-3">/</span> <strong>Profile Sekolah</strong></p>
                         </div>
