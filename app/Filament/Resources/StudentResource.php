@@ -7,11 +7,15 @@ use App\Filament\Resources\StudentResource\RelationManagers;
 use App\Models\Student;
 use Filament\Forms;
 use Filament\Forms\Form;
+use App\Models\Classroom;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Select;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Columns\ImageColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
@@ -34,6 +38,11 @@ class StudentResource extends Resource
                 FileUpload::make('photo')
                     ->image()
                     ->nullable(),
+                Select::make('class_id')
+                    ->label('Classroom')
+                    ->options(Classroom::all()->pluck('name', 'id'))
+                    ->searchable()
+                    ->required(),
             ]);
     }
 
@@ -41,14 +50,27 @@ class StudentResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name'),
-                Tables\Columns\TextColumn::make('class'),
-                Tables\Columns\ImageColumn::make('photo'),
-                Tables\Columns\TextColumn::make('created_at')
+                TextColumn::make('name')
+                    ->searchable(),
+                TextColumn::make('class')
+                    ->searchable(),
+                TextColumn::make('classroom.name')
+                    ->label('Classroom')
+                    ->searchable(),
+                ImageColumn::make('photo'),
+                TextColumn::make('created_at')
                     ->dateTime(),
             ])
             ->filters([
                 //
+            ])
+            ->actions([
+                Tables\Actions\ViewAction::make(),
+                Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
+            ])
+            ->bulkActions([
+                Tables\Actions\DeleteBulkAction::make(),
             ]);
     }
 
@@ -65,6 +87,7 @@ class StudentResource extends Resource
             'index' => Pages\ListStudents::route('/'),
             'create' => Pages\CreateStudent::route('/create'),
             'edit' => Pages\EditStudent::route('/{record}/edit'),
+            'view' => Pages\ViewStudent::route('/{record}'),
         ];
     }
 }
