@@ -35,6 +35,9 @@ class PostResource extends Resource
                 FileUpload::make('image')
                     ->image()
                     ->nullable(),
+                TextInput::make('link') 
+                    ->url()
+                    ->nullable(),
                 DatePicker::make('published_at')
                     ->nullable(),
             ]);
@@ -48,6 +51,8 @@ class PostResource extends Resource
                 Tables\Columns\TextColumn::make('content')
                     ->limit(50),
                 Tables\Columns\ImageColumn::make('image'),
+                Tables\Columns\TextColumn::make('link')
+                    ->url(fn($record) => $record->link),
                 Tables\Columns\TextColumn::make('published_at')
                     ->dateTime(),
                 Tables\Columns\TextColumn::make('created_at')
@@ -71,6 +76,7 @@ class PostResource extends Resource
             'index' => Pages\ListPosts::route('/'),
             'create' => Pages\CreatePost::route('/create'),
             'edit' => Pages\EditPost::route('/{record}/edit'),
+            'view' => Pages\ViewPost::route('/{record}'),
         ];
     }
 }
