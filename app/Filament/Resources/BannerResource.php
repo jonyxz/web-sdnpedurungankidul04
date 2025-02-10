@@ -54,6 +54,15 @@ class BannerResource extends Resource
             TextColumn::make('title')->label('Judul'),
             TextColumn::make('start_date')->label('Tanggal Mulai'),
             TextColumn::make('end_date')->label('Tanggal Berakhir'),
+        ])
+        ->filters([])
+        ->actions([
+            Tables\Actions\ViewAction::make(),
+            Tables\Actions\EditAction::make(),
+            Tables\Actions\DeleteAction::make(),
+        ])
+        ->bulkActions([
+            Tables\Actions\DeleteBulkAction::make(),
         ]);
     }
 
@@ -63,6 +72,7 @@ class BannerResource extends Resource
             'index' => Pages\ListBanners::route('/'),
             'create' => Pages\CreateBanner::route('/create'),
             'edit' => Pages\EditBanner::route('/{record}/edit'),
+            'view' => Pages\ViewBanner::route('/{record}'),
         ];
     }
 }
