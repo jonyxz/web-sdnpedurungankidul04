@@ -73,6 +73,7 @@ class GalleryResource extends Resource
             ])
             ->filters([])
             ->actions([
+                Tables\Actions\ViewAction::make(),
                 Tables\Actions\EditAction::make(),
                 Tables\Actions\DeleteAction::make(),
             ])
@@ -94,6 +95,7 @@ class GalleryResource extends Resource
             'index' => Pages\ListGalleries::route('/'),
             'create' => Pages\CreateGallery::route('/create'),
             'edit' => Pages\EditGallery::route('/{record}/edit'),
+            'view' => Pages\ViewGallery::route('/{record}'),
         ];
     }
 }
