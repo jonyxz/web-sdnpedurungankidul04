@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('class');
             $table->string('photo')->nullable();
+            $table->foreignId('class_id')->nullable()->constrained('classrooms')->onDelete('set null');
             $table->timestamps();
         });
     }
