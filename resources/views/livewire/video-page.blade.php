@@ -88,20 +88,20 @@
                     </div>
                     <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
                         <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="https://youtu.be/TsMyuxYUUs0?si=ver-4Sy1vYuOB_fP" target="_blank">
+                            <a class="mb-2" href="https://youtu.be/4EQLaa0xE58?si=GtxnAItWcuW4MusE" target="_blank">
                                 <span class="img-fluid w-100 h-auto">
-                                    <img src="https://img.youtube.com/vi/TsMyuxYUUs0/maxresdefault.jpg"
+                                    <img src="https://img.youtube.com/vi/WU0GteluwQc/maxresdefault.jpg"
                                         alt="Thumbnail YouTube" class="rounded-t-lg w-full">
                                 </span>
                             </a>
                             <div class="px-4 py-4">
-                                <a href="https://youtu.be/TsMyuxYUUs0?si=ver-4Sy1vYuOB_fP" target="_blank">
+                                <a href="https://youtu.be/4EQLaa0xE58?si=GtxnAItWcuW4MusE" target="_blank">
                                     <h5 class="mb-2 font-bold tracking-tight text-gray-900">Tonton Video Ini</h5>
                                 </a>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                                     Klik untuk melihat video langsung di YouTube.
                                 </p>
-                                <a href="https://youtu.be/TsMyuxYUUs0?si=ver-4Sy1vYuOB_fP" target="_blank"
+                                <a href="https://youtu.be/4EQLaa0xE58?si=GtxnAItWcuW4MusE" target="_blank"
                                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300">
                                     <i class="fa-brands fa-youtube mr-2"></i> 
                                      Tonton di YouTube
