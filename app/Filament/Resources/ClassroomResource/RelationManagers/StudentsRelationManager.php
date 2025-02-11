@@ -4,17 +4,21 @@ namespace App\Filament\Resources\ClassroomResource\RelationManagers;
 
 use Filament\Forms;
 use Filament\Tables;
-use Filament\Forms\Form;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\FileUpload;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ImageColumn;
-use Filament\Tables\Table;
+use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Actions\DeleteAction;
+use Filament\Tables\Actions\ViewAction;
+use Filament\Tables\Actions\DeleteBulkAction;
 
 class StudentsRelationManager extends RelationManager
 {
     protected static string $relationship = 'students';
-    public static function form(Form $form): Form
+
+    public function form(Forms\Form $form): Forms\Form
     {
         return $form
             ->schema([
@@ -24,12 +28,13 @@ class StudentsRelationManager extends RelationManager
                 TextInput::make('class')
                     ->required()
                     ->maxLength(255),
-                TextInput::make('photo')
+                FileUpload::make('photo')
                     ->image()
                     ->nullable(),
             ]);
     }
-    public static function table(Table $table): Table
+
+    public function table(Tables\Table $table): Tables\Table
     {
         return $table
             ->columns([
@@ -45,12 +50,12 @@ class StudentsRelationManager extends RelationManager
                 //
             ])
             ->actions([
-                Tables\Actions\ViewAction::make(),
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
+                ViewAction::make(),
+                EditAction::make(),
+                DeleteAction::make(),
             ])
             ->bulkActions([
-                Tables\Actions\DeleteBulkAction::make(),
+                DeleteBulkAction::make(),
             ]);
     }
 }
