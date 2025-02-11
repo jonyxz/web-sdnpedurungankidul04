@@ -38,25 +38,25 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 mb-5">
-                        <form action="#" method="post">
+                        <form action="mailto:poenyoex@gmail.com" method="post" enctype="text/plain">
                             <div class="form-group row">
                                 <div class="col-md-6 mb-4 mb-lg-0">
-                                    <input type="text" class="form-control" placeholder="Nama Depan">
+                                    <input type="text" class="form-control" placeholder="Nama Depan" name="first_name">
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Nama Belakang">
+                                    <input type="text" class="form-control" placeholder="Nama Belakang" name="last_name">
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <input type="text" class="form-control" placeholder="Alamat Email">
+                                    <input type="text" class="form-control" placeholder="Alamat Email" name="email">
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <textarea name="" id="" class="form-control" placeholder="Tulis pesan Anda." cols="30" rows="10"></textarea>
+                                    <textarea name="message" id="" class="form-control" placeholder="Tulis pesan Anda." cols="30" rows="10"></textarea>
                                 </div>
                             </div>
                             <div class="form-group row">
