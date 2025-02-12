@@ -13,6 +13,7 @@ use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\DeleteAction;
 use Filament\Tables\Actions\ViewAction;
 use Filament\Tables\Actions\DeleteBulkAction;
+use Filament\Tables\Actions\CreateAction;
 
 class StudentsRelationManager extends RelationManager
 {
@@ -57,5 +58,11 @@ class StudentsRelationManager extends RelationManager
             ->bulkActions([
                 DeleteBulkAction::make(),
             ]);
+    }
+    protected function getHeaderActions(): array
+    {
+        return [
+            CreateAction::make(), 
+        ];
     }
 }
