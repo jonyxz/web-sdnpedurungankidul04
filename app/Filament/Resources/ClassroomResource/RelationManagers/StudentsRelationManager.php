@@ -40,8 +40,7 @@ class StudentsRelationManager extends RelationManager
                     }),
                 TextInput::make('class')
                     ->required()
-                    ->maxLength(255)
-                    ->disabled(),
+                    ->maxLength(255),
                 FileUpload::make('photo')
                     ->image()
                     ->nullable(),

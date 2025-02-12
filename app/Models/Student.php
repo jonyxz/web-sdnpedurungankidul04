@@ -25,4 +25,13 @@ class Student extends Model
     {
         return $this->belongsTo(Classroom::class, 'class_id');
     }
+
+    protected static function booted()
+    {
+        static::saving(function ($student) {
+            if ($student->classroom) {
+                $student->class = $student->classroom->name;
+            }
+        });
+    }
 }
