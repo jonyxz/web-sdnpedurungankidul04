@@ -38,7 +38,6 @@ class TeachersRelationManager extends RelationManager
                     ->label('Classroom')
                     ->options(Classroom::all()->pluck('name', 'id'))
                     ->searchable()
-                    ->required()
                     ->reactive()
                     ->afterStateUpdated(function ($state, callable $set) {
                         $classroom = Classroom::find($state);

@@ -39,8 +39,7 @@ class TeacherResource extends Resource
                 Select::make('classroom_id')
                     ->label('Classroom')
                     ->options(Classroom::all()->pluck('name', 'id'))
-                    ->searchable()
-                    ->required(),
+                    ->searchable(),
             ]);
     }
 
