@@ -8,7 +8,7 @@
             <div class="site-quick-contact d-none d-lg-flex ml-auto ">
                 <div class="d-flex site-info align-items-center mr-4">
                     <span class="block-icon mr-3"><span class="icon-envelope text-blue-800"></span></span>
-                    <span>Email Kami<br><a href="mailto:sdn.pedurungankidul.04@gmail.com" class="text-yellow">sdn.pedurungankidul.04@gmail.com</a></span>
+                    <span>Email Kami<br><a href="mailto:sdn.pedurungankidul.04@gmail.com" class="text-black font-bold">sdn.pedurungankidul.04@gmail.com</a></span>
                 </div>
                 <div class="d-flex site-info align-items-center mr-4">
                     <span class="block-icon mr-3"><span class="icon-phone text-yellow-500"></span></span>
@@ -16,7 +16,7 @@
                 </div>
                 <div class="d-flex site-info align-items-center">
                     <span class="block-icon mr-3"><span class="icon-comments text-green-500"></span></span>
-                    <span>Pengaduan<br><a wire:navigate href="{{ url('/contact') }}" class="text-yellow">Mengeluh</a></span>
+                    <span>Pengaduan<br><a wire:navigate href="{{ url('/contact') }}" class="text-black font-bold">Klik Mengeluh</a></span>
                 </div>
             </div>
         </div>
@@ -40,14 +40,14 @@
                         <a href="#" class="nav-link">Galeri</a>
                         <ul class="dropdown">
                             <li><a wire:navigate href="{{ url('/foto') }}" class="nav-link">Foto</a></li>
-                            <li><a wire:navigate href="{{ url('https://www.youtube.com/@sdnpedurungankidul0456') }}" class="nav-link">Video</a></li>
+                            <li><a href="{{ url('https://www.youtube.com/@sdnpedurungankidul0456') }}" class="nav-link">Video</a></li>
                         </ul>
                     </li>
                     <li class="has-children {{ request()->is('https://buku.kemdikbud.go.id/panduan/siswa', 'https://www.youtube.com/channel/UC3jxLXIqktSuXVXxbr2I61Q') ? 'active' : '' }}">
                         <a href="#" class="nav-link">Akademik</a>
                         <ul class="dropdown">
-                            <li><a wire:navigate href="{{ url('https://buku.kemdikbud.go.id/panduan/siswa') }}" class="nav-link">Buku Siswa</a></li>
-                            <li><a wire:navigate href="{{ url('https://www.youtube.com/channel/UC3jxLXIqktSuXVXxbr2I61Q') }}" class="nav-link">Video Pembelajaran</a></li>
+                            <li><a href="{{ url('https://buku.kemdikbud.go.id/panduan/siswa') }}" class="nav-link">Buku Siswa</a></li>
+                            <li><a href="{{ url('https://www.youtube.com/channel/UC3jxLXIqktSuXVXxbr2I61Q') }}" class="nav-link">Video Pembelajaran</a></li>
                         </ul>
                     </li>
                     <li class="{{ request()->is('news') ? 'active' : '' }}"><a wire:navigate href="{{ url('/news') }}" class="nav-link">Berita</a></li>
@@ -55,9 +55,9 @@
                     <li class="has-children {{ request()->is('https://ppd.semarangkota.go.id/', 'https://disdiksmg.semarangkota.go.id/', 'https://sangjuara.semarangkota.go.id/') ? 'active' : '' }}">
                         <a href="#" class="nav-link">Website Terkait</a>
                         <ul class="dropdown">
-                            <li><a wire:navigate href="{{ url('https://ppd.semarangkota.go.id/') }}" class="nav-link">Website PPDB 2024/2025</a></li>
-                            <li><a wire:navigate href="{{ url('https://disdiksmg.semarangkota.go.id/') }}" class="nav-link">Website Disdik</a></li>
-                            <li><a wire:navigate href="{{ url('https://sangjuara.semarangkota.go.id/') }}" class="nav-link">Website Sang Juara</a></li>
+                            <li><a href="{{ url('https://ppd.semarangkota.go.id/') }}" class="nav-link">Website PPDB 2024/2025</a></li>
+                            <li><a href="{{ url('https://disdiksmg.semarangkota.go.id/') }}" class="nav-link">Website Disdik</a></li>
+                            <li><a href="{{ url('https://sangjuara.semarangkota.go.id/') }}" class="nav-link">Website Sang Juara</a></li>
                         </ul>
                     </li>
                     <li class="{{ request()->is('kontak') ? 'active' : '' }}"><a wire:navigate href="{{ url('/kontak') }}" class="nav-link">Kontak</a></li>

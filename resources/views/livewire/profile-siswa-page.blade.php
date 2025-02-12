@@ -17,7 +17,7 @@
                     <div class="row align-items-center ">
 
                         <div class="col-md-5 mt-5 pt-5">
-                            <span class="text-cursive h5 text-light">Proflie</span>
+                            <span class="text-cursive h5 text-light">Profile</span>
                             <h1 class="mb-3 font-weight-bold text-teal">Profile Siswa</h1>
                             <p><a href="{{ url('/') }}" class="text-white">Beranda</a> <span class="mx-3">/</span>
                                 <strong>Profile Siswa</strong></p>
@@ -42,7 +42,7 @@
                     <!-- Siswa Items -->
                     <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
                         <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="{{ url('/profile-siswa/2') }}">
+                            <a class="mb-2" href="{{ url('/profile-siswa/1') }}">
                                 <span class="img-fluid d-flex justify-content-center"><img
                                         src="{{ asset('assets/images/sdn/kelas.png') }}" alt="Image" class=""></span>
                             </a>
@@ -53,7 +53,7 @@
                     </div>
                     <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
                         <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="{{ url('/profile-siswa/1') }}">
+                            <a class="mb-2" href="{{ url('/profile-siswa/2') }}">
                                 <span class="img-fluid d-flex justify-content-center"><img
                                         src="{{ asset('assets/images/sdn/kelas.png') }}" alt="Image" class=""></span>
                             </a>
