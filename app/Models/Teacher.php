@@ -18,7 +18,7 @@ class Teacher extends Model
         'name',
         'position',
         'photo',
-        'class_id',
+        'classroom_id',
     ];
 
     public function classroom()

@@ -11,18 +11,18 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('classes', function (Blueprint $table) {
+        Schema::create('classrooms', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->timestamps();
         });
 
         Schema::table('students', function (Blueprint $table) {
-            $table->foreignId('class_id')->nullable()->constrained('classes')->onDelete('set null');
+            $table->foreignId('classroom_id')->nullable()->constrained('classrooms')->onDelete('set null');
         });
 
         Schema::table('teachers', function (Blueprint $table) {
-            $table->foreignId('class_id')->nullable()->constrained('classes')->onDelete('set null');
+            $table->foreignId('classroom_id')->nullable()->constrained('classrooms')->onDelete('set null');
         });
     }
 
@@ -32,15 +32,15 @@ return new class extends Migration
     public function down()
     {
         Schema::table('students', function (Blueprint $table) {
-            $table->dropForeign(['class_id']);
-            $table->dropColumn('class_id');
+            $table->dropForeign(['classroom_id']);
+            $table->dropColumn('classroom_id');
         });
 
         Schema::table('teachers', function (Blueprint $table) {
-            $table->dropForeign(['class_id']);
-            $table->dropColumn('class_id');
+            $table->dropForeign(['classroom_id']);
+            $table->dropColumn('classroom_id');
         });
 
-        Schema::dropIfExists('classes');
+        Schema::dropIfExists('classrooms');
     }
 };

@@ -38,7 +38,7 @@ class StudentResource extends Resource
                 FileUpload::make('photo')
                     ->image()
                     ->nullable(),
-                Select::make('class_id')
+                Select::make('classroom_id')
                     ->label('Classroom')
                     ->options(Classroom::all()->pluck('name', 'id'))
                     ->searchable()
