@@ -32,17 +32,22 @@ class StudentResource extends Resource
                 TextInput::make('name')
                     ->required()
                     ->maxLength(255),
+                Select::make('classroom_id')
+                        ->label('Classroom')
+                        ->options(Classroom::all()->pluck('name', 'id'))
+                        ->searchable()
+                        ->required()
+                        ->reactive()
+                        ->afterStateUpdated(function ($state, callable $set) {
+                            $classroom = Classroom::find($state);
+                            $set('class', $classroom ? $classroom->name : '');
+                        }),
                 TextInput::make('class')
                     ->required()
                     ->maxLength(255),
                 FileUpload::make('photo')
                     ->image()
                     ->nullable(),
-                Select::make('classroom_id')
-                    ->label('Classroom')
-                    ->options(Classroom::all()->pluck('name', 'id'))
-                    ->searchable()
-                    ->required(),
             ]);
     }
 

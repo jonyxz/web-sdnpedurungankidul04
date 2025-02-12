@@ -7,6 +7,8 @@ use Filament\Tables;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Select;
+use App\Models\Classroom;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Actions\EditAction;
@@ -26,9 +28,20 @@ class StudentsRelationManager extends RelationManager
                 TextInput::make('name')
                     ->required()
                     ->maxLength(255),
+                Select::make('classroom_id')
+                    ->label('Classroom')
+                    ->options(Classroom::all()->pluck('name', 'id'))
+                    ->searchable()
+                    ->required()
+                    ->reactive()
+                    ->afterStateUpdated(function ($state, callable $set) {
+                        $classroom = Classroom::find($state);
+                        $set('class', $classroom ? $classroom->name : '');
+                    }),
                 TextInput::make('class')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->disabled(),
                 FileUpload::make('photo')
                     ->image()
                     ->nullable(),
