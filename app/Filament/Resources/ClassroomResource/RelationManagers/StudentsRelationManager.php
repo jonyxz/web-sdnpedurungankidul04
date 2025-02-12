@@ -57,12 +57,9 @@ class StudentsRelationManager extends RelationManager
             ])
             ->bulkActions([
                 DeleteBulkAction::make(),
+            ])
+            ->headerActions([
+                CreateAction::make(), 
             ]);
-    }
-    protected function getHeaderActions(): array
-    {
-        return [
-            CreateAction::make(), 
-        ];
     }
 }
