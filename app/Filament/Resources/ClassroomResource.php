@@ -5,6 +5,7 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\ClassroomResource\Pages;
 use App\Models\Classroom;
 use App\Filament\Resources\ClassroomResource\RelationManagers\StudentsRelationManager; 
+use App\Filament\Resources\ClassroomResource\RelationManagers\TeachersRelationManager; 
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Forms\Components\TextInput;
@@ -55,6 +56,7 @@ class ClassroomResource extends Resource
     {
         return [
             StudentsRelationManager::class,
+            TeachersRelationManager::class,
         ];
     }
 
