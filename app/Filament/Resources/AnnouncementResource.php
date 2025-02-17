@@ -12,6 +12,8 @@ use Filament\Tables;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\FileUpload;
+use Filament\Tables\Columns\ImageColumn;
 
 class AnnouncementResource extends Resource
 {
@@ -28,6 +30,9 @@ class AnnouncementResource extends Resource
                     ->maxLength(255),
                 Textarea::make('content')
                     ->required(),
+                FileUpload::make('image')
+                    ->image()
+                    ->nullable(),
                 DatePicker::make('published_at')
                     ->nullable(),
             ]);
@@ -40,6 +45,7 @@ class AnnouncementResource extends Resource
                 Tables\Columns\TextColumn::make('title'),
                 Tables\Columns\TextColumn::make('content')
                     ->limit(50),
+                Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('published_at')
                     ->dateTime(),
                 Tables\Columns\TextColumn::make('created_at')
