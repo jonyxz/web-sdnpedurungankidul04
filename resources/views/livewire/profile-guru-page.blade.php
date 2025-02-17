@@ -42,7 +42,8 @@
                             <div class="bg-white rounded-lg shadow-sm">
                                 <a class="mb-2" href="#">
                                     <span class="img-fluid d-flex justify-content-center">
-                                        <img src="{{ asset('storage/' . $teacher->photo) }}" alt="{{ $teacher->name }}" class="h-46 w-40">
+                                        <img src="{{ $teacher->photo ? asset('storage/' . $teacher->photo) : asset('assets/images/sdn/guru.png') }}" 
+                                            alt="{{ $teacher->name }}" class="h-46 w-40">
                                     </span>
                                 </a>
                                 <div class="px-4 py-4">
