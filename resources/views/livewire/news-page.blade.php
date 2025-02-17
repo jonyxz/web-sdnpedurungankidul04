@@ -47,11 +47,12 @@
                             <div class="bg-white rounded-lg shadow-sm">
                                 <a class="mb-2" href="#">
                                     <span class="img-wrap">
-                                        <img src="{{ $post->image ? asset('storage/' . $post->image) : asset('assets/images/sdn/default-berita.jpg') }}" 
+                                        <img src="{{ $post->image ? asset('storage/' . $post->image) : asset('assets/images/default-news.jpeg') }}" 
                                             alt="{{ $post->title }}" class="img-fluid">
                                     </span>
                                 </a>
                                 <div class="px-4 py-4">
+                                    <p class="text-sm text-gray-500">{{ \Carbon\Carbon::parse($post->published_at)->translatedFormat('d F Y') }}</p>
                                     <a href="#">
                                         <h5 class="mb-2 font-bold tracking-tight text-gray-900">{{ $post->title }}</h5>
                                     </a>
@@ -68,8 +69,7 @@
                             </div>
                         </div>
                     @endforeach
-                </div>
-                    
+                </div>                    
 
                 </div>
             </div>
