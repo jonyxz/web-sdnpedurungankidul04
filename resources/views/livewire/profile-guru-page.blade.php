@@ -37,51 +37,23 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
-                        <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="#">
-                                <span class="img-fluid d-flex justify-content-center"><img src="{{ asset('assets/images/sdn/guru1.png') }}" alt="Image" class="h-46 w-40"></span>
-                            </a>
-                            <div class="px-4 py-4">
-                                <h5 class="mb-2 font-bold tracking-tight text-gray-900">Diyah Agustinawati, S.Pd.</h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Guru Kelas 1-A</p>
+                    @foreach ($teachers as $teacher)
+                        <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
+                            <div class="bg-white rounded-lg shadow-sm">
+                                <a class="mb-2" href="#">
+                                    <span class="img-fluid d-flex justify-content-center">
+                                        <img src="{{ asset('storage/' . $teacher->photo) }}" alt="{{ $teacher->name }}" class="h-46 w-40">
+                                    </span>
+                                </a>
+                                <div class="px-4 py-4">
+                                    <h5 class="mb-2 font-bold tracking-tight text-gray-900">{{ $teacher->name }}</h5>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                                        Guru {{ $teacher->position ?? 'Belum Ditentukan' }}
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
-                        <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="#">
-                                <span class="img-fluid d-flex justify-content-center"><img src="{{ asset('assets/images/sdn/guru2.png') }}" alt="Image" class="h-46 w-40"></span>
-                            </a>
-                            <div class="px-4 py-4">
-                                <h5 class="mb-2 font-bold tracking-tight text-gray-900">Anik Sugiarsih, S.Pd.</h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Guru Kelas 1-B</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
-                        <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="#">
-                                <span class="img-fluid d-flex justify-content-center"><img src="{{ asset('assets/images/sdn/guru3.png') }}" alt="Image" class="h-46 w-40"></span>
-                            </a>
-                            <div class="px-4 py-4">
-                                <h5 class="mb-2 font-bold tracking-tight text-gray-900">Suharto, S.Pd.</h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Guru PJOK</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
-                        <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="#">
-                                <span class="img-fluid d-flex justify-content-center"><img src="{{ asset('assets/images/sdn/guru4.png') }}" alt="Image" class="h-46 w-40"></span>
-                            </a>
-                            <div class="px-4 py-4">
-                                <h5 class="mb-2 font-bold tracking-tight text-gray-900">Rahmat Sarjito, S.Pd.I.</h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Guru Pend. Agama Islam</p>
-                            </div>
-                        </div>
-                    </div>
-                    
+                    @endforeach
                 </div>
 
             </div>
