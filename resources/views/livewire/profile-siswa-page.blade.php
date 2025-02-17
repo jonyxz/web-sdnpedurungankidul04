@@ -39,40 +39,20 @@
                 </div>
 
                 <div class="row">
-                    <!-- Siswa Items -->
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
-                        <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="{{ url('/profile-siswa/1') }}">
-                                <span class="img-fluid d-flex justify-content-center"><img
-                                        src="{{ asset('assets/images/sdn/kelas.png') }}" alt="Image" class=""></span>
-                            </a>
-                            <div class="px-4 py-4">
-                                <h5 class="mb-2 font-bold tracking-tight text-gray-900">Kelas 1</h5>
+                    @foreach($classrooms as $classroom)
+                        <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
+                            <div class="bg-white rounded-lg shadow-sm">
+                                <a class="mb-2" href="{{ url('/profile-siswa/' . $classroom->id) }}">
+                                    <span class="img-fluid d-flex justify-content-center">
+                                        <img src="{{ asset('assets/images/sdn/kelas.png') }}" alt="Image" class="">
+                                    </span>
+                                </a>
+                                <div class="px-4 py-4">
+                                    <h5 class="mb-2 font-bold tracking-tight text-gray-900">{{ $classroom->name }}</h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
-                        <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="{{ url('/profile-siswa/2') }}">
-                                <span class="img-fluid d-flex justify-content-center"><img
-                                        src="{{ asset('assets/images/sdn/kelas.png') }}" alt="Image" class=""></span>
-                            </a>
-                            <div class="px-4 py-4">
-                                <h5 class="mb-2 font-bold tracking-tight text-gray-900">Kelas 2</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-3 justify-center">
-                        <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="{{ url('/profile-siswa/2') }}">
-                                <span class="img-fluid d-flex justify-content-center"><img
-                                        src="{{ asset('assets/images/sdn/kelas.png') }}" alt="Image" class=""></span>
-                            </a>
-                            <div class="px-4 py-4">
-                                <h5 class="mb-2 font-bold tracking-tight text-gray-900">Kelas 3</h5>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
