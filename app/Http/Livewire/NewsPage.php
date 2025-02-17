@@ -11,11 +11,13 @@ class NewsPage extends Component
 
     public function mount()
     {
-        $this->posts = Post::latest()->get();
+        $this->posts = Post::orderBy('published_at', 'desc')->get();
     }
 
     public function render()
     {
-        return view('livewire.news-page');
+        return view('livewire.news-page', [
+            'posts' => $this->posts,
+        ]);
     }
 }

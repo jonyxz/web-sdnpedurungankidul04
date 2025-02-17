@@ -42,72 +42,33 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-5 justify-center">
-                        <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="#">
-                                <span class="img-wrap"><img src="{{ asset('assets/images/sdn/berita1.jpeg') }}"
-                                        alt="Image"></span>
-                            </a>
-                            <div class="px-4 py-4">
-                                <a href="#">
-                                    <h5 class="mb-2 font-bold tracking-tight text-gray-900">Pelatihan Batik Jumputan
-                                        Kelas IV</h5>
+                    @foreach ($posts as $post)
+                        <div class="col-lg-4 mb-4 mb-lg-0 pb-5 justify-center">
+                            <div class="bg-white rounded-lg shadow-sm">
+                                <a class="mb-2" href="#">
+                                    <span class="img-wrap">
+                                        <img src="{{ $post->image ? asset('storage/' . $post->image) : asset('assets/images/sdn/default-berita.jpg') }}" 
+                                            alt="{{ $post->title }}" class="img-fluid">
+                                    </span>
                                 </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">PPG Prajabatan merupakan
-                                    program yang menghasilkan guru inovatif dan profesional di Indonesia. Program PPG
-                                    prajabatan tahun 2023 berlangsung selama dua semester.
-                                </p>
-                                <a href="https://www.kompasiana.com/linda12246/66003dd714709323d04d8fb2/pelatihan-batik-jumputan-siswa-kelas-iv-sdn-pedurungan-kidul-04-semarang"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                </a>
+                                <div class="px-4 py-4">
+                                    <a href="#">
+                                        <h5 class="mb-2 font-bold tracking-tight text-gray-900">{{ $post->title }}</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                                        {{ Str::limit($post->content, 150) }}
+                                    </p>
+                                    @if ($post->link)
+                                        <a href="{{ $post->link }}" target="_blank"
+                                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            Read more
+                                        </a>
+                                    @endif
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-5 justify-center">
-                        <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="#">
-                                <span class="img-wrap"><img src="{{ asset('assets/images/sdn/berita1.jpeg') }}"
-                                        alt="Image"></span>
-                            </a>
-                            <div class="px-4 py-4">
-                                <a href="#">
-                                    <h5 class="mb-2 font-bold tracking-tight text-gray-900">Pelatihan Batik Jumputan
-                                        Kelas IV</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">PPG Prajabatan merupakan
-                                    program yang menghasilkan guru inovatif dan profesional di Indonesia. Program PPG
-                                    prajabatan tahun 2023 berlangsung selama dua semester.
-                                </p>
-                                <a href="https://www.kompasiana.com/linda12246/66003dd714709323d04d8fb2/pelatihan-batik-jumputan-siswa-kelas-iv-sdn-pedurungan-kidul-04-semarang"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4 mb-lg-0 pb-5 justify-center">
-                        <div class="bg-white rounded-lg shadow-sm">
-                            <a class="mb-2" href="#">
-                                <span class="img-wrap"><img src="{{ asset('assets/images/sdn/berita1.jpeg') }}"
-                                        alt="Image"></span>
-                            </a>
-                            <div class="px-4 py-4">
-                                <a href="#">
-                                    <h5 class="mb-2 font-bold tracking-tight text-gray-900">Pelatihan Batik Jumputan
-                                        Kelas IV</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">PPG Prajabatan merupakan
-                                    program yang menghasilkan guru inovatif dan profesional di Indonesia. Program PPG
-                                    prajabatan tahun 2023 berlangsung selama dua semester.
-                                </p>
-                                <a href="https://www.kompasiana.com/linda12246/66003dd714709323d04d8fb2/pelatihan-batik-jumputan-siswa-kelas-iv-sdn-pedurungan-kidul-04-semarang"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+                </div>
                     
 
                 </div>
