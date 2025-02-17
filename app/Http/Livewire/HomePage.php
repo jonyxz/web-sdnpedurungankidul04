@@ -16,7 +16,8 @@ class HomePage extends Component
 
     public function render()
     {
-        return view('livewire.home-page')
-            ->with('layout', 'components.layouts.app');
+        return view('livewire.home-page', [
+            'posts' => $this->latestPosts,
+        ]);
     }
 }
