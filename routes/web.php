@@ -13,6 +13,7 @@ use App\Http\Livewire\ProfileSekolahPage;
 use App\Http\Livewire\ProfileGuruPage;
 use App\Http\Livewire\ProfileSiswaPage;
 use App\Http\Livewire\KelasDetailPage;
+use App\Http\Livewire\NewsDetailPage;
 
 // Route untuk Livewire Components
 Route::get('/', HomePage::class)->name('home');
@@ -27,3 +28,4 @@ Route::get('/profile-sekolah', ProfileSekolahPage::class)->name('profile.sekolah
 Route::get('/profile-guru', ProfileGuruPage::class)->name('profile.guru');
 Route::get('/profile-siswa', ProfileSiswaPage::class)->name('profile.siswa');
 Route::get('/profile-siswa/{id}', KelasDetailPage::class)->name('kelas.detail');
+Route::get('/news/{id}', NewsDetailPage::class)->name('news.detail');

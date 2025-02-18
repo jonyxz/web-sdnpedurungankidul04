@@ -42,35 +42,35 @@
 
                 <div class="row">
                     @foreach ($posts as $post)
-                        <div class="col-lg-4 mb-4 mb-lg-0 pb-5 justify-center">
-                            <div class="bg-white rounded-lg shadow-sm">
+                        <div class="col-lg-4 d-flex align-items-stretch mb-4 mb-lg-0">
+                            <div class="bg-white rounded-lg shadow-sm d-flex flex-column w-100">
                                 <a class="mb-2" href="#">
-                                    <span class="img-wrap">
+                                    <div class="img-wrap w-100 h-64 overflow-hidden">
                                         <img src="{{ $post->image ? asset('storage/' . $post->image) : asset('assets/images/default-news.jpeg') }}" 
-                                            alt="{{ $post->title }}" class="img-fluid">
-                                    </span>
+                                            alt="{{ $post->title }}" 
+                                            class="w-100 h-100 object-cover">
+                                    </div>
                                 </a>
-                                <div class="px-4 py-4">
+                                <div class="px-4 py-4 flex-grow">
                                     <p class="text-sm text-gray-500">{{ \Carbon\Carbon::parse($post->published_at)->translatedFormat('d F Y') }}</p>
                                     <a href="#">
                                         <h5 class="mb-2 font-bold tracking-tight text-gray-900">{{ $post->title }}</h5>
                                     </a>
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                                    <p class="mb-3 font-normal text-gray-700 text-justify">
                                         {{ Str::limit($post->content, 150) }}
                                     </p>
-                                    @if ($post->link)
-                                        <a href="{{ $post->link }}" target="_blank"
-                                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none">
-                                            Read more
-                                        </a>
-                                    @endif
+                                </div>
+                                <div class="px-4 pb-4">
+                                    <a href="{{ url('/news/' . $post->id) }}" 
+                                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none">
+                                        Read more
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     @endforeach
-                </div>                    
+                </div>                                                                    
 
-                </div>
             </div>
         </div>
 

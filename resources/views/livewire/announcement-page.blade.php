@@ -44,7 +44,7 @@
                             <h5 class="mb-2 text-black text-xl font-semibold">
                                 {{ $announcement->title }}
                             </h5>
-                            <p class="text-gray-600 leading-normal font-light flex-grow-1">
+                            <p class="text-gray-600 leading-normal font-light flex-grow-1 text-justify">
                                 {{ \Illuminate\Support\Str::limit($announcement->content, 100) }}
                             </p>
                             <div>
