@@ -10,12 +10,12 @@
         </div>
 
         <!-- Details -->
-        <div class="site-section bg-gray-400">
+        <div class="site-section bg-gray-300">
             <div class="container mx-auto pt-20">
                 @if($classroom)
                     <div class="pt-20 pb-10">
                         <h2 class="text-black font-bold">SDN PEDURUNGAN KIDUL 04</h2>
-                        <span class="text-black text-cursive h4 d-block">Kelas {{ $classroom->name }}</span>
+                        <span class="text-black font-education h4 d-block">Siswa Kelas {{ $classroom->name }}</span>
                     </div>
                     
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">

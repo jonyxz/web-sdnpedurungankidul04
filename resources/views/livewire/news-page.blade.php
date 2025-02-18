@@ -18,7 +18,6 @@
                         <div class="row align-items-center ">
 
                             <div class="col-md-5 mt-5 pt-5">
-                                <span class="text-cursive h5 text-light">Berita</span>
                                 <h1 class="mb-3 font-weight-bold text-teal">Berita Terkait</h1>
                                 <p><a href="{{ url('/') }}" class="text-white">Beranda</a> <span class="mx-3">/</span>
                                     <strong>Berita</strong>
@@ -36,7 +35,7 @@
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12 text-center">
-                        <span class="text-cursive h5 text-black d-block">Berita Terkini</span>
+                        <span class="font-education h3 text-black d-block">Berita Terkini</span>
                         <h3 class="text-black text-center font-bold">SDN PEDURUNGAN KIDUL 04</h3>
                     </div>
                 </div>

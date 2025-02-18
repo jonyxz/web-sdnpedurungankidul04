@@ -15,7 +15,6 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-5 mt-5 pt-5">
-                            <span class="text-cursive h5 text-light">Pengumuman</span>
                             <h1 class="mb-3 font-weight-bold text-teal">Pengumuman Sekolah</h1>
                             <p>
                                 <a href="{{ url('/') }}" class="text-white">Beranda</a> 
@@ -33,7 +32,7 @@
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12 text-center">
-                        <span class="text-cursive h5 text-black d-block">Pengumuman Sekolah</span>
+                        <span class="font-education h5 text-black d-block">Pengumuman Sekolah</span>
                         <h3 class="text-black text-center font-bold">SDN PEDURUNGAN KIDUL 04</h3>
                     </div>
                 </div>

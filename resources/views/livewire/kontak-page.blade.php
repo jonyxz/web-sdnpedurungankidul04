@@ -16,8 +16,7 @@
                     <div class="row align-items-center ">
 
                         <div class="col-md-5 mt-5 pt-5">
-                            <span class="text-cursive h5 text-light">Kontak</span>
-                            <h1 class="mb-3 font-weight-bold text-teal">Informasi SDN Pedurungan Kidul 04</h1>
+                            <h1 class="mb-3 font-weight-bold text-teal">Informasi Sekolah</h1>
                             <p><a href="{{ url('/') }}" class="text-white">Beranda</a> <span class="mx-3">/</span> <strong>Kontak</strong></p>
                         </div>
 
@@ -31,7 +30,7 @@
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12 text-center text-black">
-                        <span class="text-cursive h5 d-block">Kontak Kami</span>
+                        <span class="font-education h5 d-block">Kontak Kami</span>
                         <h2 class="font-bold">SDN PEDURUNGAN KIDUL 04</h2>
                     </div>
                 </div>
