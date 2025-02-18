@@ -19,7 +19,8 @@
                         <div class="col-md-5 mt-5 pt-5">
                             <h1 class="mb-3 font-weight-bold text-teal">Gallery Foto</h1>
                             <p><a href="{{ url('/') }}" class="text-white">Beranda</a> <span class="mx-3">/</span>
-                                <strong>Gallery Foto</strong></p>
+                                <strong>Gallery Foto</strong>
+                            </p>
                         </div>
 
                     </div>
@@ -37,32 +38,26 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 mb-4">
-                        <a href="{{ asset('assets/images/post_3.jpg') }}" data-fancybox="gal"><img
-                                src="{{ asset('assets/images/post_3.jpg') }}" alt="Image" class="img-fluid"></a>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <a href="{{ asset('assets/images/post_2.jpg') }}" data-fancybox="gal"><img
-                                src="{{ asset('assets/images/post_2.jpg') }}" alt="Image" class="img-fluid"></a>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <a href="{{ asset('assets/images/post_4.jpg') }}" data-fancybox="gal"><img
-                                src="{{ asset('assets/images/post_4.jpg') }}" alt="Image" class="img-fluid"></a>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <a href="{{ asset('assets/images/post_3.jpg') }}" data-fancybox="gal"><img
-                                src="{{ asset('assets/images/post_3.jpg') }}" alt="Image" class="img-fluid"></a>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <a href="{{ asset('assets/images/post_3.jpg') }}" data-fancybox="gal"><img
-                                src="{{ asset('assets/images/post_3.jpg') }}" alt="Image" class="img-fluid"></a>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <a href="{{ asset('assets/images/post_3.jpg') }}" data-fancybox="gal"><img
-                                src="{{ asset('assets/images/post_3.jpg') }}" alt="Image" class="img-fluid"></a>
-                    </div>
-
+                    @foreach ($galleries as $gallery)
+                        <div class="col-lg-4 mb-4 mb-lg-0 pb-5 justify-center">
+                            <div class="bg-white rounded-lg shadow-sm">
+                                <a class="mb-2" href="{{ url('/foto/' . $gallery->id) }}">
+                                    <span class="img-wrap">
+                                        <img src="{{ $gallery->images->isNotEmpty() ? asset('storage/' . $gallery->images->first()->path) : asset('assets/images/default-news.jpeg') }}"
+                                            alt="{{ $gallery->title }}" class="img-fluid">
+                                    </span>
+                                </a>
+                                <div class="px-4 py-4">
+                                    <h5 class="mb-2 font-bold tracking-tight text-gray-900">{{ $gallery->title }}</h5>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                                        {{ Str::limit($gallery->description, 150) }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
+                
             </div>
         </div>
 
