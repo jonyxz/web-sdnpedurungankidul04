@@ -18,11 +18,7 @@ class Profile extends Model
         'headmaster_name',
         'headmaster_photo',
         'welcome_message',
-        'description',
-        'visi',
-        'misi',
         'email',      
         'phone',      
-        'address',    
     ];
 }

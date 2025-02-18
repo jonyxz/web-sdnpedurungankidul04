@@ -16,12 +16,8 @@ return new class extends Migration
             $table->string('headmaster_name'); 
             $table->string('headmaster_photo')->nullable();
             $table->text('welcome_message');
-            $table->text('description');
-            $table->text('visi');
-            $table->text('misi');
             $table->string('email')->nullable(); 
             $table->string('phone')->nullable(); 
-            $table->text('address')->nullable(); 
             $table->timestamps();
         });
     }

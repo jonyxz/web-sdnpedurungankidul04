@@ -34,19 +34,11 @@ class ProfileResource extends Resource
                     ->nullable(),
                 Textarea::make('welcome_message')
                     ->required(),
-                Textarea::make('description')
-                    ->required(),
-                Textarea::make('visi')
-                    ->required(),
-                Textarea::make('misi')
-                    ->required(),
                 TextInput::make('email')
                     ->email()
                     ->nullable(),
                 TextInput::make('phone')
                     ->tel()
-                    ->nullable(),
-                Textarea::make('address')
                     ->nullable(),
             ]);
     }
