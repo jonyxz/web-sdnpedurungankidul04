@@ -53,7 +53,7 @@ class PostResource extends Resource
                 Tables\Columns\TextColumn::make('link')
                     ->url(fn($record) => $record->link),
                 Tables\Columns\TextColumn::make('published_at')
-                    ->dateTime(),
+                    ->date(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime(),
             ])
