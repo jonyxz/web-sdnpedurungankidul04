@@ -87,4 +87,11 @@ return [
     'livewire_loading_delay' => 'default',
     'dark_mode' => false,
 
+    'widgets' => [
+        'default' => [
+            'account' => false,
+            'info' => false, 
+        ],
+    ],
+
 ];
