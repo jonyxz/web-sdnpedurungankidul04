@@ -50,7 +50,6 @@ class PostResource extends Resource
                 Tables\Columns\TextColumn::make('title'),
                 Tables\Columns\TextColumn::make('content')
                     ->limit(50),
-                Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('link')
                     ->url(fn($record) => $record->link),
                 Tables\Columns\TextColumn::make('published_at')

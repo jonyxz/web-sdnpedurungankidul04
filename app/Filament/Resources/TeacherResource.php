@@ -49,7 +49,6 @@ class TeacherResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name'),
                 Tables\Columns\TextColumn::make('position'),
-                Tables\Columns\ImageColumn::make('photo'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime(),
             ])
