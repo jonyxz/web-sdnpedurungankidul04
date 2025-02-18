@@ -17,7 +17,6 @@
                     <div class="row align-items-center ">
 
                         <div class="col-md-5 mt-5 pt-5">
-                            <span class="text-cursive h5 text-light">Pengaduan</span>
                             <h1 class="mb-3 font-weight-bold text-teal">Hubungi Kami</h1>
                             <p><a href="{{ url('/') }}" class="text-white">Beranda</a> <span class="mx-3">/</span> <strong>Pengaduan</strong></p>
                         </div>

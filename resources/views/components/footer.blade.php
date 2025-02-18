@@ -31,7 +31,11 @@
             <div>
                 <h2 class="text-white text-xl font-semibold mb-4">Pengaduan</h2>
                 <ul class="space-y-2">
-                    <li><a href="/contact" class="hover:text-gray-400">Hubungi Kami</a></li>
+                    <li>
+                        <a href="/contact" class="flex items-center space-x-2 hover:text-gray-400">
+                            <i class="icon-comments"></i> <span>Hubungi Kami</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div>
@@ -55,7 +59,7 @@
             </div>
         </div>
         <div class="border-t border-gray-700 pt-4 mt-5 text-center">
-            <p class="text-gray-400">&copy; 2025 SDN PEDURUNGAN KIDUL 04. All rights reserved.</p>
+            <p class="text-light">&copy; 2025 SDN PEDURUNGAN KIDUL 04. All rights reserved.</p>
         </div>
     </div>
 </footer>
