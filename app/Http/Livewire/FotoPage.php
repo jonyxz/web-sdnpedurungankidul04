@@ -11,11 +11,13 @@ class FotoPage extends Component
 
     public function mount()
     {
-        $this->galleries = Gallery::with('images')->get();
+        $this->galleries = Gallery::all();
     }
 
     public function render()
     {
-        return view('livewire.foto-page', ['galleries' => $this->galleries]);
+        return view('livewire.foto-page', [
+            'galleries' => $this->galleries,
+        ]);
     }
 }

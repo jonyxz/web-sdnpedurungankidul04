@@ -39,24 +39,27 @@
                 </div>
                 <div class="row">
                     @foreach ($galleries as $gallery)
-                        <div class="col-lg-4 mb-4 mb-lg-0 pb-5 justify-center">
-                            <div class="bg-white rounded-lg shadow-sm">
-                                <a class="mb-2" href="{{ url('/foto/' . $gallery->id) }}">
-                                    <span class="img-wrap">
-                                        <img src="{{ $gallery->images->isNotEmpty() ? asset('storage/' . $gallery->images->first()->path) : asset('assets/images/default-news.jpeg') }}"
-                                            alt="{{ $gallery->title }}" class="img-fluid">
-                                    </span>
+                        <div class="col-lg-4 mb-4 pb-5 d-flex justify-content-center">
+                            <div class="bg-white rounded-lg shadow-sm overflow-hidden d-flex flex-column h-100 w-full max-w-xs 
+                                group transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+                                
+                                <a class="mb-2 d-block" href="{{ url('/foto/' . $gallery->id) }}">
+                                    <div class="img-wrap d-block w-100 h-64 overflow-hidden">
+                                        @php
+                                            $firstImage = collect($gallery->images)->first();
+                                        @endphp
+                                        <img src="{{ $firstImage ? asset('storage/' . $firstImage) : asset('assets/images/default-news.jpeg') }}"
+                                            alt="{{ $gallery->title }}" 
+                                            class="img-fluid w-full h-full object-cover">
+                                    </div>
                                 </a>
-                                <div class="px-4 py-4">
-                                    <h5 class="mb-2 font-bold tracking-tight text-gray-900">{{ $gallery->title }}</h5>
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                        {{ Str::limit($gallery->description, 150) }}
-                                    </p>
+                                <div class="px-4 py-4 text-center">
+                                    <h5 class="mb-3 font-bold tracking-tight text-gray-900">{{ $gallery->title }}</h5>
                                 </div>
                             </div>
                         </div>
                     @endforeach
-                </div>
+                </div>                                                
                 
             </div>
         </div>
