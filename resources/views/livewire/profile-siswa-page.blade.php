@@ -29,12 +29,12 @@
         </div>
 
         <!-- Kelas Section -->
-        <div class="site-section bg-teal">
+        <div class="site-section bg-gray-200">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12 text-center">
                         <span class="text-cursive h5 text-black d-block">Profile Kelas Siswa</span>
-                        <h3 class="text-white text-center font-bold">SDN PEDURUNGAN KIDUL 04</h3>
+                        <h3 class="text-black text-center font-bold">SDN PEDURUNGAN KIDUL 04</h3>
                     </div>
                 </div>
 

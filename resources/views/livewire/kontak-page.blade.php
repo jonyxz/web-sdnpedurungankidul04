@@ -27,7 +27,7 @@
         </div>
 
         <!-- kontak -->
-        <div class="site-section bg-yellow-200">
+        <div class="site-section bg-gray-300">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12 text-center text-black">

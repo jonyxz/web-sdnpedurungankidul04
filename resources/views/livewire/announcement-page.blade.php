@@ -49,7 +49,7 @@
                                 <p class="text-gray-600 leading-normal font-light">
                                     Liburan Semester Ganjil 2024/2025 dimulai dari tanggal 20 Desember 2024 hingga 5 Januari 2025.
                                 </p>
-                                <a href="{{ url('/announcement/1') }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                <a href="{{ url('/announcement/1') }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none">
                                     Read more
                                 </a>
                             </div>
@@ -65,7 +65,7 @@
                                 <p class="text-gray-600 leading-normal font-light">
                                     PPDB 2025/2026 akan segera dibuka pada tanggal 1 Februari 2025 hingga 30 April 2025.
                                 </p>
-                                <a href="{{ url('/announcement/2') }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                <a href="{{ url('/announcement/2') }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none">
                                     Read more
                                 </a>
                             </div>

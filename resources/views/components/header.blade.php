@@ -8,7 +8,7 @@
             <div class="site-quick-contact d-none d-lg-flex ml-auto ">
                 <div class="d-flex site-info align-items-center mr-4">
                     <span class="block-icon mr-3"><span class="icon-envelope text-blue-800"></span></span>
-                    <span>Email Kami<br><a href="mailto:sdn.pedurungankidul.04@gmail.com" class="text-black font-bold">sdn.pedurungankidul.04@gmail.com</a></span>
+                    <span>Email Kami<br><a href="mailto:sdn.pedurungankidul.04@gmail.com" class="font-bold text-white hover:text-gray-300">sdn.pedurungankidul.04@gmail.com</a></span>
                 </div>
                 <div class="d-flex site-info align-items-center mr-4">
                     <span class="block-icon mr-3"><span class="icon-phone text-yellow-500"></span></span>
@@ -68,7 +68,7 @@
                 <a href="https://web.facebook.com/SDNPedurunganKidul04" class="rounded-full border border-gray-300 p-2 flex items-center justify-center w-9 h-9 hover:bg-gray-200"><span class="icon-facebook text-blue-700 flex items-center justify-center"></span></a>
                 <a href="https://www.youtube.com/channel/UC-tpimeqCvFTRV8e31bpbXQ" class="rounded-full border border-gray-300 p-2 flex items-center justify-center w-9 h-9 hover:bg-gray-200"><span class="icon-youtube text-red flex items-center justify-center"></span></a>
                 <a href="https://instagram.com/sdnpedurungankidul04?igshid=ZDdkNTZiNTM=" class="rounded-full border border-gray-300 p-2 flex items-center justify-center w-9 h-9 hover:bg-gray-200"><span class="icon-instagram text-pink flex items-center justify-center"></span></a>
-                <a wire:navigate href="{{ url('/admin') }}" class="rounded-full border border-gray-300 p-2 flex items-center justify-center w-9 h-9 hover:bg-gray-200 bg-white"><img src="{{ asset('assets/images/login.png') }}" alt="Login"></a>
+                <a wire:navigate href="{{ url('/admin') }}" class="rounded-full border border-gray-300 p-2 flex items-center justify-center w-9 h-9 hover:bg-gray-200"><img src="{{ asset('assets/images/login.png') }}" alt="Login"></a>
             </div>
         </div>
     </div>
