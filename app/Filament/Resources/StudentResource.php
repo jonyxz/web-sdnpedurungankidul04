@@ -59,7 +59,6 @@ class StudentResource extends Resource
                     ->searchable(),
                 TextColumn::make('class')
                     ->searchable(),
-                ImageColumn::make('photo'),
                 TextColumn::make('created_at')
                     ->dateTime(),
             ])

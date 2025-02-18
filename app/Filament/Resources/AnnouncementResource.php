@@ -45,7 +45,6 @@ class AnnouncementResource extends Resource
                 Tables\Columns\TextColumn::make('title'),
                 Tables\Columns\TextColumn::make('content')
                     ->limit(50),
-                Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('published_at')
                     ->dateTime(),
                 Tables\Columns\TextColumn::make('created_at')
