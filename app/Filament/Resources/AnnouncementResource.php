@@ -32,9 +32,9 @@ class AnnouncementResource extends Resource
                     ->required(),
                 FileUpload::make('image')
                     ->image()
-                    ->nullable(),
+                    ->required(),
                 DatePicker::make('published_at')
-                    ->nullable(),
+                    ->required(),
             ]);
     }
 

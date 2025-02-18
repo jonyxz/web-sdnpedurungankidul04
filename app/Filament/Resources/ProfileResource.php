@@ -31,15 +31,15 @@ class ProfileResource extends Resource
                     ->maxLength(255),
                 FileUpload::make('headmaster_photo')
                     ->image()
-                    ->nullable(),
+                    ->required(),
                 Textarea::make('welcome_message')
                     ->required(),
                 TextInput::make('email')
                     ->email()
-                    ->nullable(),
+                    ->required(),
                 TextInput::make('phone')
                     ->tel()
-                    ->nullable(),
+                    ->required(),
             ]);
     }
 

@@ -34,12 +34,12 @@ class PostResource extends Resource
                     ->required(),
                 FileUpload::make('image')
                     ->image()
-                    ->nullable(),
+                    ->required(),
                 TextInput::make('link') 
                     ->url()
-                    ->nullable(),
+                    ->required(),
                 DatePicker::make('published_at')
-                    ->nullable(),
+                    ->required(),
             ]);
     }
 
