@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('content');
-            $table->string('image')->nullable();
-            $table->string('link')->nullable(); 
-            $table->date('published_at')->nullable(); 
+            $table->string('image');
+            $table->string('link'); 
+            $table->date('published_at'); 
             $table->timestamps();
         });
     }
