@@ -17,7 +17,6 @@
                     <div class="row align-items-center ">
 
                         <div class="col-md-5 mt-5 pt-5">
-                            <span class="text-cursive h5 text-light">Pengaduan</span>
                             <h1 class="mb-3 font-weight-bold text-teal">Hubungi Kami</h1>
                             <p><a href="{{ url('/') }}" class="text-white">Beranda</a> <span class="mx-3">/</span> <strong>Pengaduan</strong></p>
                         </div>
@@ -33,7 +32,7 @@
                 <div class="row justify-content-center text-center">
                     <div class="col-7 text-center mb-5">
                         <h2 class="text-center font-bold">Hubungi Kami</h2>
-                        <p class="text-cursive h5 text-black d-block">Menggunakan Formulir Kontak.</p>
+                        <p class="text-education h5 text-black d-block">Menggunakan Formulir Kontak.</p>
                     </div>
                 </div>
                 <div class="row">

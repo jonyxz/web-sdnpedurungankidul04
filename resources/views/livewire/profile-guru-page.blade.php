@@ -30,7 +30,7 @@
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12 text-center">
-                        <span class="font-education h3 text-black d-block">GURU</span>
+                        <span class="font-education h4 text-black d-block">Guru</span>
                         <h3 class="text-black text-center font-bold">SDN PEDURUNGAN KIDUL 04</h3>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                                 <div class="px-4 py-4">
                                     <h5 class="mb-2 font-bold tracking-tight text-gray-900">{{ $teacher->name }}</h5>
                                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                        Guru {{ $teacher->position ?? 'Belum Ditentukan' }}
+                                        {{ $teacher->position ?? 'Belum Ditentukan' }}
                                     </p>
                                 </div>
                             </div>

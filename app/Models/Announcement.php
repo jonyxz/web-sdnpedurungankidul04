@@ -2,14 +2,12 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Announcement extends Model
 {
-    protected $fillable = [
-        'title',
-        'content',
-        'image',
-        'published_at',
-    ];
+    use HasFactory;
+
+    protected $fillable = ['title', 'content', 'image', 'start_date', 'end_date'];
 }

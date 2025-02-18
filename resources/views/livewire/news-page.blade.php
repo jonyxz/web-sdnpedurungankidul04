@@ -35,7 +35,7 @@
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12 text-center">
-                        <span class="font-education h3 text-black d-block">Berita Terkini</span>
+                        <span class="font-education h5 text-red d-block">Berita Terkini</span>
                         <h3 class="text-black text-center font-bold">SDN PEDURUNGAN KIDUL 04</h3>
                     </div>
                 </div>

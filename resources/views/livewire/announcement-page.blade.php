@@ -32,45 +32,29 @@
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12 text-center">
-                        <span class="font-education h5 text-black d-block">Pengumuman Sekolah</span>
+                        <span class="font-education h5 text-red d-block">Pengumuman Sekolah</span>
                         <h3 class="text-black text-center font-bold">SDN PEDURUNGAN KIDUL 04</h3>
                     </div>
                 </div>
 
                 <div class="row">
-                    <!-- Announcement Items -->
+                    @foreach($announcements as $announcement)
                     <div class="col-lg-4 mb-4">
                         <div class="flex flex-col my-2 bg-white border-gray-200 rounded-lg">
                             <div class="p-4">
                                 <h5 class="mb-2 text-black text-xl font-semibold">
-                                    Libur Semester Ganjil 2024/2025
+                                    {{ $announcement->title }}
                                 </h5>
                                 <p class="text-gray-600 leading-normal font-light">
-                                    Liburan Semester Ganjil 2024/2025 dimulai dari tanggal 20 Desember 2024 hingga 5 Januari 2025.
+                                    {{ \Illuminate\Support\Str::limit($announcement->content, 100) }}
                                 </p>
-                                <a href="{{ url('/announcement/1') }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none">
+                                <a href="{{ url('/announcement/' . $announcement->id) }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none">
                                     Read more
                                 </a>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-lg-4 mb-4">
-                        <div class="flex flex-col my-2 bg-white border-gray-200 rounded-lg">
-                            <div class="p-4">
-                                <h5 class="mb-2 text-black text-xl font-semibold">
-                                    Pendaftaran Siswa Baru 2025/2026
-                                </h5>
-                                <p class="text-gray-600 leading-normal font-light">
-                                    PPDB 2025/2026 akan segera dibuka pada tanggal 1 Februari 2025 hingga 30 April 2025.
-                                </p>
-                                <a href="{{ url('/announcement/2') }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Announcement Items -->
+                    @endforeach
                 </div>
             </div>
         </div>
