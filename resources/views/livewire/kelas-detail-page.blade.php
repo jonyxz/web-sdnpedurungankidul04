@@ -15,7 +15,7 @@
                 @if($classroom)
                     <div class="pt-20 pb-10">
                         <h2 class="text-black font-bold">SDN PEDURUNGAN KIDUL 04</h2>
-                        <span class="text-black font-education h4 d-block">Siswa Kelas {{ $classroom->name }}</span>
+                        <span class="text-black font-education h5 d-block">Siswa Kelas {{ $classroom->name }}</span>
                     </div>
                     
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">

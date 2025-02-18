@@ -79,7 +79,7 @@
             <div class="container">
                 <div class="row justify-content-center text-center section-2-title">
                     <div class="col-md-10">
-                        <span class="font-education h4 text-red">Sekilas Tentang</span>
+                        <span class="font-education h5 text-red">Sekilas Tentang</span>
                         <h3 class="text-black text-center font-bold">SDN PEDURUNGAN KIDUL 04</h3>
                         <div class="flex justify-center p-3 transform transition duration-500 ease-in-out hover:scale-105">
                             <img src="{{ asset('assets/images/sdn/sekolah.jpg') }}" alt="Image" class="max-w-full h-auto rounded-lg">

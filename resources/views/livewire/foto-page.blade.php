@@ -33,7 +33,7 @@
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12 text-center">
-                        <span class="font-education h4 text-red d-block">Gallery Foto</span>
+                        <span class="font-education h5 text-red d-block">Gallery Foto</span>
                         <h2 class="text-black font-bold">SDN PEDURUNGAN KIDUL 04</h2>
                     </div>
                 </div>

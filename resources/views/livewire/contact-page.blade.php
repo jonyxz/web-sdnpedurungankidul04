@@ -33,7 +33,7 @@
                 <div class="row justify-content-center text-center">
                     <div class="col-7 text-center mb-5">
                         <h2 class="text-center font-bold">Hubungi Kami</h2>
-                        <p class="text-cursive h5 text-black d-block">Menggunakan Formulir Kontak.</p>
+                        <p class="text-education h5 text-black d-block">Menggunakan Formulir Kontak.</p>
                     </div>
                 </div>
                 <div class="row">
