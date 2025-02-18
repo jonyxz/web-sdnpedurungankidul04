@@ -7,17 +7,16 @@ use App\Models\Gallery;
 
 class FotoDetailPage extends Component
 {
-    public $galleryId;
     public $gallery;
 
     public function mount($id)
     {
-        $this->galleryId = $id;
-        $this->gallery = Gallery::findOrFail($id);
+        $this->gallery = Gallery::findOrFail(intval($id));
     }
     
     public function render()
     {
-        return view('livewire.foto-detail-page', ['gallery' => $this->gallery]);
+        return view('livewire.foto-detail-page')
+            ->with('gallery', $this->gallery);
     }
 }

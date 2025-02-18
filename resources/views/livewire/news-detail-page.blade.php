@@ -15,7 +15,7 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-5 mt-5 pt-5">
-                            <h1 class="mb-3 font-weight-bold text-teal">Berita Sekolah</h1>
+                            <h1 class="mb-3 font-weight-bold text-teal">Berita Terkait</h1>
                             <p>
                                 <a href="{{ url('/') }}" class="text-white">Beranda</a> 
                                 <span class="mx-3">/</span> 
