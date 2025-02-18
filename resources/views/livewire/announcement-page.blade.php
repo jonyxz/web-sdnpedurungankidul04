@@ -28,7 +28,7 @@
         </div>
 
         <!-- Announcement Section -->
-        <div class="site-section bg-gray-300">
+        <div class="site-section bg-gray-200">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12 text-center">
@@ -39,23 +39,24 @@
 
                 <div class="row">
                     @foreach($announcements as $announcement)
-                    <div class="col-lg-4 mb-4">
-                        <div class="flex flex-col my-2 bg-white border-gray-200 rounded-lg">
-                            <div class="p-4">
-                                <h5 class="mb-2 text-black text-xl font-semibold">
-                                    {{ $announcement->title }}
-                                </h5>
-                                <p class="text-gray-600 leading-normal font-light">
-                                    {{ \Illuminate\Support\Str::limit($announcement->content, 100) }}
-                                </p>
-                                <a href="{{ url('/announcement/' . $announcement->id) }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="d-flex flex-column h-100 w-100 bg-white border-gray-200 rounded-lg shadow-sm p-4">
+                            <h5 class="mb-2 text-black text-xl font-semibold">
+                                {{ $announcement->title }}
+                            </h5>
+                            <p class="text-gray-600 leading-normal font-light flex-grow-1">
+                                {{ \Illuminate\Support\Str::limit($announcement->content, 100) }}
+                            </p>
+                            <div>
+                                <a href="{{ url('/announcement/' . $announcement->id) }}" 
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none">
                                     Read more
                                 </a>
                             </div>
                         </div>
                     </div>
                     @endforeach
-                </div>
+                </div>                                
             </div>
         </div>
     </div>

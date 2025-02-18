@@ -30,16 +30,24 @@
         </div>
 
         <!-- Details -->
-        <div class="site-section bg-gray-400">
+        <div class="site-section bg-gray-200 py-5">
             <div class="container">
-                <div class="row items-center mt-20 pt-20">
-                    <div class="col-md-10">
-                        <h2 class="mb-2 font-bold text-black">{{ $announcement->title }}</h2>
-                        <span class="text-lg font-education text-black">{{ $announcement->content }}</span>
-                        <img src="{{ asset('storage/' . $announcement->image) }}" alt="{{ $announcement->title }}" class="img-fluid w-96 h-96 pt-3">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 mb-4">
+                        <h2 class="mb-3 font-bold text-black">{{ $announcement->title }}</h2>
+                        <p class="text-lg font-education text-gray-700" style="text-align: justify;">
+                            {{ $announcement->content }}
+                        </p>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-12 text-center">
+                        <img src="{{ asset('storage/' . $announcement->image) }}" 
+                            alt="{{ $announcement->title }}" 
+                            class="img-fluid rounded shadow-sm" 
+                            style="max-width: 450px; height: auto; object-fit: cover;">
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
     </div>
 </body>
