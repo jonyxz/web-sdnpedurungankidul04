@@ -16,26 +16,24 @@ class TeacherSeeder extends Seeder
     public function run()
     {
         $teachers = [
-            ['name' => 'Anam', 'position' => 'Guru Kelas 6', 'classroom_id' => 6],
-            ['name' => 'Burhan', 'position' => 'Guru Kelas 5', 'classroom_id' => 5],
-            ['name' => 'Catur', 'position' => 'Guru Kelas 4', 'classroom_id' => 4], 
-            ['name' => 'Doni', 'position' => 'Guru Kelas 3', 'classroom_id' => 3], 
-            ['name' => 'Arga', 'position' => 'Guru Kelas 2', 'classroom_id' => 2], 
-            ['name' => 'Lala', 'position' => 'Guru Kelas 1', 'classroom_id' => 1],
-            ['name' => 'michella', 'position' => 'Guru Bahasa Inggris'],
-            ['name' => 'kitty', 'position' => 'Guru seni Rupa'],
-            ['name' => 'Denis', 'position' => 'Guru Pendidikan Jasmani'],
+            ['name' => 'Anam', 'position' => 'Guru Kelas 1', 'classroom_id' => 1, 'photo' => ''],
+            ['name' => 'Burhan', 'position' => 'Guru Kelas 2', 'classroom_id' => 2, 'photo' => ''],
+            ['name' => 'Catur', 'position' => 'Guru Kelas 3', 'classroom_id' => 3, 'photo' => ''],
+            ['name' => 'Doni', 'position' => 'Guru Kelas 4', 'classroom_id' => 4, 'photo' => ''],
+            ['name' => 'Arga', 'position' => 'Guru Kelas 5', 'classroom_id' => 5, 'photo' => ''],
+            ['name' => 'Lala', 'position' => 'Guru Kelas 6', 'classroom_id' => 6, 'photo' => ''],
+            ['name' => 'michella', 'position' => 'Guru Bahasa Inggris', 'classroom_id' => null, 'photo' => ''],
+            ['name' => 'kitty', 'position' => 'Guru seni Rupa', 'classroom_id' => null, 'photo' => ''],
+            ['name' => 'Denis', 'position' => 'Guru Pendidikan Jasmani', 'classroom_id' => null, 'photo' => ''],
         ];
 
         foreach ($teachers as $teacherData) {
-            $classroom = Classroom::find($teacherData['classroom_id']);
-            
-            if ($classroom) {
+            if ($teacherData['classroom_id'] === null || Classroom::find($teacherData['classroom_id'])) {
                 Teacher::create([
                     'name' => $teacherData['name'],
                     'position' => $teacherData['position'],
                     'classroom_id' => $teacherData['classroom_id'],
-                    // 'photo' => $teacherData['photo'],
+                    'photo' => $teacherData['photo'],
                 ]);
             }
         }
