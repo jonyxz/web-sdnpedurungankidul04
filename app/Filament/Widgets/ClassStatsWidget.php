@@ -12,7 +12,6 @@ class ClassStatsWidget extends BaseWidget
     protected static ?string $maxHeight = null; 
     protected static bool $isLazy = false; 
     
-    
     protected function getTableQuery(): \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Relations\Relation|null
     {
         return Classroom::query();
@@ -32,9 +31,11 @@ class ClassStatsWidget extends BaseWidget
                 ->counts('students')
                 ->sortable(),
 
-            TextColumn::make('teacher.name')
+            TextColumn::make('teachers')
                 ->label('Guru Pengajar')
-                ->default('Belum ada guru')
+                ->formatStateUsing(fn ($record) => $record->teachers->isNotEmpty()
+                    ? $record->teachers->pluck('name')->join(', ')
+                    : 'Belum ada guru')
                 ->wrap(),
         ];
     }
