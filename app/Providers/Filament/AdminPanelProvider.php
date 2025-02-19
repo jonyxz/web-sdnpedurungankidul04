@@ -13,12 +13,13 @@ use Filament\Support\Colors\Color;
 use Filament\Widgets;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
-use App\Filament\Widgets\TeacherCountWidget;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
-use App\Filament\Widgets\StudentCountWidget;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use App\Filament\Widgets\TeacherCountWidget;
+use App\Filament\Widgets\StudentCountWidget;
+use App\Filament\Widgets\ClassStatsWidget;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -41,7 +42,8 @@ class AdminPanelProvider extends PanelProvider
             ->widgets([
                 TeacherCountWidget::class,
                 StudentCountWidget::class,
-                Widgets\AccountWidget::class,
+                ClassStatsWidget::class,
+                // Widgets\AccountWidget::class,
                 // Widgets\FilamentInfoWidget::class,
             ])
             ->middleware([
