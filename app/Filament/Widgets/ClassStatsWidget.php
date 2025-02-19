@@ -9,6 +9,10 @@ use App\Models\Classroom;
 
 class ClassStatsWidget extends BaseWidget
 {
+    protected static ?string $maxHeight = null; 
+    protected static bool $isLazy = false; 
+    
+    
     protected function getTableQuery(): \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Relations\Relation|null
     {
         return Classroom::query();
@@ -20,7 +24,8 @@ class ClassStatsWidget extends BaseWidget
             TextColumn::make('name')
                 ->label('Nama Kelas')
                 ->sortable()
-                ->searchable(),
+                ->searchable()
+                ->wrap(),
 
             TextColumn::make('students_count')
                 ->label('Total Murid')
@@ -29,7 +34,8 @@ class ClassStatsWidget extends BaseWidget
 
             TextColumn::make('teacher.name')
                 ->label('Guru Pengajar')
-                ->default('Belum ada guru'),
+                ->default('Belum ada guru')
+                ->wrap(),
         ];
     }
 }
