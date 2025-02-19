@@ -39,7 +39,15 @@ Proyek ini merupakan rebranding dari website SDN Pedurungan Kidul 04. Website in
     ```bash
     php artisan migrate
     ```
-7. Jalankan server lokal:
+7. Membuat user admin:
+    ```bash
+    php artisan make:filament-user
+    ```
+8. Menghubungkan penyimpanan lokal:
+    ```bash
+    php artisan storage:link
+    ```
+9. Jalankan server lokal:
     ```bash
     php artisan serve
     ```
